@@ -1,0 +1,16 @@
+html {
+  font-size: 8px;
+}
+
+body {
+  background-color: black;
+}
+
+@font-face {
+  font-family: 'approach';
+  src: url("platform/fonts/english/RamaGothicRoundedE-SemiBold.eot");
+  src: url("platform/fonts/english/RamaGothicRoundedE-SemiBold.eot?#iefix") format("embedded-opentype"), url("platform/fonts/english/RamaGothicRoundedE-SemiBold.woff2") format("woff2"), url("platform/fonts/english/RamaGothicRoundedE-SemiBold.woff") format("woff"), url("platform/fonts/english/RamaGothicRoundedE-SemiBold.svg#RamaGothicRoundedE-SemiBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
