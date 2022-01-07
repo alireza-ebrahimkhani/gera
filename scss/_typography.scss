@@ -1,24 +1,78 @@
 @font-face {
-    font-family: 'approach';
-    src: url('platform/fonts/english/RamaGothicRoundedE-SemiBold.eot');
-    src: url('platform/fonts/english/RamaGothicRoundedE-SemiBold.eot?#iefix') format('embedded-opentype'),
-        url('platform/fonts/english/RamaGothicRoundedE-SemiBold.woff2') format('woff2'),
-        url('platform/fonts/english/RamaGothicRoundedE-SemiBold.woff') format('woff'),
-        url('platform/fonts/english/RamaGothicRoundedE-SemiBold.svg#RamaGothicRoundedE-SemiBold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-  }
+  font-family: "approach";
+  src: url("platform/fonts/english/RamaGothicRoundedE-SemiBold.eot");
+  src: url("platform/fonts/english/RamaGothicRoundedE-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("platform/fonts/english/RamaGothicRoundedE-SemiBold.woff2")
+      format("woff2"),
+    url("platform/fonts/english/RamaGothicRoundedE-SemiBold.woff")
+      format("woff"),
+    url("platform/fonts/english/RamaGothicRoundedE-SemiBold.svg#RamaGothicRoundedE-SemiBold")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
-$enfont: 'approach', sans-serif;
+$enfont: "approach", sans-serif;
 $fafont: "Anjoman";
 
 @mixin type($weight, $size, $spacing, $leading, $case) {
-    font-weight: $weight;
-    font-size: $size;
-    letter-spacing: $spacing;
-    line-height: $leading;
-    text-transform: $case;
+  font-weight: $weight;
+  font-size: $size;
+  letter-spacing: $spacing;
+  line-height: $leading;
+  text-transform: $case;
+}
+
+.caption {
+  @include type(light, 2rem, 1, 3rem, lowercase);
+  @include sScreen {
+    @include type(light, 1.5rem, 1, 2rem, lowercase);
+  }
+  @include lScreen {
+    @include type(light, 3rem, 1, 2.8rem, lowercase);
+  }
+}
+
+.body {
+  @include type(regular, 2.75rem, 1, 3rem, lowercase);
+  @include sScreen {
+    @include type(regular, 1.75rem, 1, 3rem, lowercase);
+  }
+  @include lScreen {
+    @include type(regular, 4.5rem, 1, 2.8rem, lowercase);
+  }
+}
+
+.title {
+  @include type(medium, 6rem, 1, 2.6rem, lowercase);
+  @include sScreen {
+    @include type(medium, 2.75rem, 1, 2.8rem, lowercase);
+  }
+  @include lScreen {
+    @include type(medium, 8rem, 1, 2.6rem, lowercase);
+  }
+}
+
+.heading {
+  @include type(regular, 8rem, 1, 2.6rem, lowercase);
+  @include sScreen {
+    @include type(regular, 4.5rem, 1, 2.8rem, lowercase);
+  }
+  @include lScreen {
+    @include type(regular, 9rem, 1, 2.6rem, lowercase);
+  }
+}
+
+.display {
+  @include type(medium, 18rem, 1, 2.6rem, lowercase);
+  @include sScreen {
+    @include type(medium, 8rem, 1, 2.6rem, lowercase);
+  }
+  @include lScreen {
+    @include type(medium, 24.75rem, 1, 2.6rem, lowercase);
+  }
 }
 .captipn{
     @include sScreen() {

@@ -1,21 +1,21 @@
-$minS-Screen:0;
-$maxS-Screen:904px;
-$minM-Screen:905px;
-$maxM-Screen:1439px;
-$minL-Screen:1440px;
+$minS-Screen: 0;
+$maxS-Screen: 904px;
+$minM-Screen: 905px;
+$maxM-Screen: 1439px;
+$minL-Screen: 1440px;
 
 @mixin sScreen() {
-    @media only screen and (min-width: $minS-Screen) and (max-width: $maxS-Screen){
-        @content;
-    }
+  @media only screen and (min-width: $minS-Screen) and (max-width: $maxS-Screen) {
+    @content;
+  }
 }
 @mixin mScreen() {
-    @media only screen and (min-width: $minM-Screen) and (max-width: $maxM-Screen){
-        @content;
-    }
+  @media only screen and (min-width: $minM-Screen) and (max-width: $maxM-Screen) {
+    @content;
+  }
 }
 @mixin lScreen() {
-    @media only screen and (min-width:$minL-Screen){
-        @content;
-    }
+  @media only screen and (min-width: $minL-Screen) {
+    @content;
+  }
 }
