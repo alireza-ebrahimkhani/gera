@@ -14,3 +14,33 @@ body {
   font-style: normal;
   font-display: swap;
 }
+
+@media only screen and (min-width: 0) and (max-width: 904px) {
+  .captipn {
+    font-weight: normal;
+    font-size: 16rem;
+    letter-spacing: -1.5;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+}
+
+@media only screen and (min-width: 905px) and (max-width: 1439px) {
+  .captipn {
+    font-weight: normal;
+    font-size: 16rem;
+    letter-spacing: -1.5;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .captipn {
+    font-weight: normal;
+    font-size: 16rem;
+    letter-spacing: -1.5;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+}

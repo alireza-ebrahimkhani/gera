@@ -21,5 +21,13 @@ $fafont: "Anjoman";
     text-transform: $case;
 }
 .captipn{
-    
+    @include sScreen() {
+        @include type(normal, 16rem, -1.5, 1, uppercase);
+    }
+    @include mScreen() {
+        @include type(normal, 16rem, -1.5, 1, uppercase);
+    }
+    @include lScreen() {
+        @include type(normal, 16rem, -1.5, 1, uppercase);
+    }
 }
