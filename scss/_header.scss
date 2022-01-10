@@ -19,7 +19,7 @@
     -moz-backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-radius: 4rem;
-    transition: $mediumMotion;
+    //transition: $mediumMotion;
     cursor: pointer;
     @include xxlScreen() {
       left: calc(((100% - 1440px) / 2) + 6rem);
