@@ -9,12 +9,12 @@
     }
   }
   &_hamIco {
-    width: 8rem;
-    height: 8rem;
+    width: 158px;
+    height: 38px;
     position: fixed;
-    bottom: 6rem;
-    left: 6rem;
-    background: rgba($mainColor, 0.5);
+    left: 25px;
+    top: 702px;
+    background: rgba($whiteBackground, 0.5);
     backdrop-filter: blur(20px);
     -moz-backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -117,9 +117,9 @@
   }
 
   &_popup {
-    width: 60rem;
-    height: calc(100vh - 6rem);
-    background: rgba($mainColor, 0.5);
+    width: 45rem;
+    height: 82rem;
+    background: rgba($it, 0.5);
     position: fixed;
     bottom: 3rem;
     left: 3rem;
