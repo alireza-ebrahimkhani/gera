@@ -1,24 +1,24 @@
 @font-face {
   font-family: "vazir";
-  src: url("asset/fonts/en/Vazir-Light.eot");
-  src: url("asset/fonts/en/Vazir-Light.eot?#iefix") format("embedded-opentype"),
-    url("asset/fonts/en/Vazir-Light.ttf") format("ttf"),
-    url("asset/fonts/en/Vazir-Light.woff2") format("woff2"),
-    url("asset/fonts/en/Vazir-Light.woff") format("woff"),
-    url("asset/fonts/en/Vazir-Light.svg#Vazir-Light") format("svg");
+  src: url("asset/fonts/fa/Vazir-Light.eot");
+  src: url("asset/fonts/fa/Vazir-Light.eot?#iefix") format("embedded-opentype"),
+    url("asset/fonts/fa/Vazir-Light.ttf") format("ttf"),
+    url("asset/fonts/fa/Vazir-Light.woff2") format("woff2"),
+    url("asset/fonts/fa/Vazir-Light.woff") format("woff"),
+    url("asset/fonts/fa/Vazir-Light.svg#Vazir-Light") format("svg");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "vazir";
-  src: url("asset/fonts/en/Vazir-Regular.eot");
-  src: url("asset/fonts/en/Vazir-Regular.eot?#iefix")
+  src: url("asset/fonts/fa/Vazir-Regular.eot");
+  src: url("asset/fonts/fa/Vazir-Regular.eot?#iefix")
       format("embedded-opentype"),
-    url("asset/fonts/en/Vazir-Regular.ttf") format("ttf"),
-    url("asset/fonts/en/Vazir-Regular.woff2") format("woff2"),
-    url("asset/fonts/en/Vazir-Regular.woff") format("woff"),
-    url("asset/fonts/en/Vazir-Regular.svg#Vazir-Regular") format("svg");
+    url("asset/fonts/fa/Vazir-Regular.ttf") format("ttf"),
+    url("asset/fonts/fa/Vazir-Regular.woff2") format("woff2"),
+    url("asset/fonts/fa/Vazir-Regular.woff") format("woff"),
+    url("asset/fonts/fa/Vazir-Regular.svg#Vazir-Regular") format("svg");
   font-weight: 200;
   font-style: normal;
   font-display: swap;
@@ -81,19 +81,36 @@ $enfont: "approach", sans-serif;
 $fafont: "vazir";
 
 @mixin type($weight, $size, $spacing, $leading, $case) {
+  font-family: $enfont;
   font-weight: $weight;
   font-size: $size;
   letter-spacing: $spacing;
   line-height: $leading;
   text-transform: $case;
+  color: white;
 }
 
+.overline {
+  @include type(100, 1.5rem, 1, 3rem, lowercase);
+  @include sScreen {
+    @include type(100, 1.25rem, 1, 2rem, lowercase);
+  }
+  @include mScreen {
+    @include type(100, 1.25rem, 1, 2rem, lowercase);
+  }
+  @include xlScreen {
+    @include type(100, 1.75rem, 1, 2.8rem, lowercase);
+  }
+}
 .caption {
   @include type(100, 2rem, 1, 3rem, lowercase);
   @include sScreen {
     @include type(100, 1.5rem, 1, 2rem, lowercase);
   }
-  @include lScreen {
+  @include mScreen {
+    @include type(100, 1.5rem, 1, 2rem, lowercase);
+  }
+  @include xlScreen {
     @include type(100, 3rem, 1, 2.8rem, lowercase);
   }
 }
@@ -103,7 +120,10 @@ $fafont: "vazir";
   @include sScreen {
     @include type(200, 1.75rem, 1, 3rem, lowercase);
   }
-  @include lScreen {
+  @include mScreen {
+    @include type(200, 1.75rem, 1, 3rem, lowercase);
+  }
+  @include xlScreen {
     @include type(200, 4.5rem, 1, 2.8rem, lowercase);
   }
 }
@@ -113,7 +133,10 @@ $fafont: "vazir";
   @include sScreen {
     @include type(300, 2.75rem, 1, 2.8rem, lowercase);
   }
-  @include lScreen {
+  @include mScreen {
+    @include type(300, 2.75rem, 1, 2.8rem, lowercase);
+  }
+  @include xlScreen {
     @include type(300, 8rem, 1, 2.6rem, lowercase);
   }
 }
@@ -123,7 +146,10 @@ $fafont: "vazir";
   @include sScreen {
     @include type(200, 4.5rem, 1, 2.8rem, lowercase);
   }
-  @include lScreen {
+  @include mScreen {
+    @include type(200, 4.5rem, 1, 2.8rem, lowercase);
+  }
+  @include xlScreen {
     @include type(200, 9rem, 1, 2.6rem, lowercase);
   }
 }
@@ -133,7 +159,27 @@ $fafont: "vazir";
   @include sScreen {
     @include type(300, 8rem, 1, 2.6rem, lowercase);
   }
-  @include lScreen {
+  @include mScreen {
+    @include type(300, 8rem, 1, 2.6rem, lowercase);
+  }
+  @include xlScreen {
     @include type(300, 24.75rem, 1, 2.6rem, lowercase);
+  }
+}
+
+.fa{
+  font-family: $fafont;
+  direction: rtl;
+}
+
+.align{
+  &_left{
+    text-align: left;
+  }
+  &_center{
+    text-align: center;
+  }
+  &_right{
+    text-align: right;
   }
 }

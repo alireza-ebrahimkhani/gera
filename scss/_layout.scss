@@ -1,0 +1,5 @@
+.row{
+    margin: 0 6rem;
+    display: grid;
+    grid-template-columns: repeat(12 , 1fr);
+}
