@@ -75,7 +75,7 @@ body {
   font-size: 1.5rem;
   letter-spacing: 1;
   line-height: 3rem;
-  text-transform: lowercase;
+  text-transform: capitalize;
   color: white;
 }
 
@@ -86,7 +86,7 @@ body {
     font-size: 1.25rem;
     letter-spacing: 1;
     line-height: 2rem;
-    text-transform: lowercase;
+    text-transform: capitalize;
     color: white;
   }
 }
@@ -98,7 +98,7 @@ body {
     font-size: 1.25rem;
     letter-spacing: 1;
     line-height: 2rem;
-    text-transform: lowercase;
+    text-transform: capitalize;
     color: white;
   }
 }
@@ -110,7 +110,7 @@ body {
     font-size: 1.75rem;
     letter-spacing: 1;
     line-height: 2.8rem;
-    text-transform: lowercase;
+    text-transform: capitalize;
     color: white;
   }
 }
@@ -121,7 +121,7 @@ body {
   font-size: 2rem;
   letter-spacing: 1;
   line-height: 3rem;
-  text-transform: lowercase;
+  text-transform: capitalize;
   color: white;
 }
 
@@ -132,7 +132,7 @@ body {
     font-size: 1.5rem;
     letter-spacing: 1;
     line-height: 2rem;
-    text-transform: lowercase;
+    text-transform: capitalize;
     color: white;
   }
 }
@@ -144,7 +144,7 @@ body {
     font-size: 1.5rem;
     letter-spacing: 1;
     line-height: 2rem;
-    text-transform: lowercase;
+    text-transform: capitalize;
     color: white;
   }
 }
@@ -156,29 +156,29 @@ body {
     font-size: 3rem;
     letter-spacing: 1;
     line-height: 2.8rem;
-    text-transform: lowercase;
+    text-transform: capitalize;
     color: white;
   }
 }
 
 .body {
   font-family: "approach", sans-serif;
-  font-weight: 200;
+  font-weight: 100;
   font-size: 2.75rem;
   letter-spacing: 1;
-  line-height: 3rem;
-  text-transform: lowercase;
+  line-height: 3.5rem;
+  text-transform: capitalize;
   color: white;
 }
 
 @media only screen and (min-width: 0) and (max-width: 599px) {
   .body {
     font-family: "approach", sans-serif;
-    font-weight: 200;
+    font-weight: 100;
     font-size: 1.75rem;
     letter-spacing: 1;
-    line-height: 3rem;
-    text-transform: lowercase;
+    line-height: 3.5rem;
+    text-transform: capitalize;
     color: white;
   }
 }
@@ -186,11 +186,11 @@ body {
 @media only screen and (min-width: 600px) and (max-width: 904px) {
   .body {
     font-family: "approach", sans-serif;
-    font-weight: 200;
+    font-weight: 100;
     font-size: 1.75rem;
     letter-spacing: 1;
-    line-height: 3rem;
-    text-transform: lowercase;
+    line-height: 3.5rem;
+    text-transform: capitalize;
     color: white;
   }
 }
@@ -198,11 +198,11 @@ body {
 @media only screen and (min-width: 1440px) {
   .body {
     font-family: "approach", sans-serif;
-    font-weight: 200;
-    font-size: 4.5rem;
+    font-weight: 100;
+    font-size: 3rem;
     letter-spacing: 1;
-    line-height: 2.8rem;
-    text-transform: lowercase;
+    line-height: 3.75rem;
+    text-transform: capitalize;
     color: white;
   }
 }
@@ -210,10 +210,10 @@ body {
 .title {
   font-family: "approach", sans-serif;
   font-weight: 300;
-  font-size: 6rem;
+  font-size: 5.25rem;
   letter-spacing: 1;
   line-height: 2.6rem;
-  text-transform: lowercase;
+  text-transform: capitalize;
   color: white;
 }
 
@@ -224,7 +224,7 @@ body {
     font-size: 2.75rem;
     letter-spacing: 1;
     line-height: 2.8rem;
-    text-transform: lowercase;
+    text-transform: capitalize;
     color: white;
   }
 }
@@ -236,7 +236,7 @@ body {
     font-size: 2.75rem;
     letter-spacing: 1;
     line-height: 2.8rem;
-    text-transform: lowercase;
+    text-transform: capitalize;
     color: white;
   }
 }
@@ -245,10 +245,10 @@ body {
   .title {
     font-family: "approach", sans-serif;
     font-weight: 300;
-    font-size: 8rem;
+    font-size: 6.5rem;
     letter-spacing: 1;
     line-height: 2.6rem;
-    text-transform: lowercase;
+    text-transform: capitalize;
     color: white;
   }
 }
@@ -368,6 +368,119 @@ body {
   grid-template-columns: repeat(12, 1fr);
 }
 
+@media only screen and (min-width: 0) and (max-width: 599px) {
+  .row {
+    margin: 0 2rem;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 904px) {
+  .row {
+    margin: 0 3rem;
+  }
+}
+
+.smallRow {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.col-full {
+  grid-column: span 12;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 904px) {
+  .col-full {
+    grid-column: span 8;
+  }
+}
+
+@media only screen and (min-width: 0) and (max-width: 599px) {
+  .col-full {
+    grid-column: span 4;
+  }
+}
+
+.col-twoThirds {
+  grid-column: span 8;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 904px) {
+  .col-twoThirds {
+    grid-column: span 4;
+  }
+}
+
+@media only screen and (min-width: 0) and (max-width: 599px) {
+  .col-twoThirds {
+    grid-column: span 4;
+  }
+}
+
+.col-half {
+  grid-column: span 6;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 904px) {
+  .col-half {
+    grid-column: span 4;
+  }
+}
+
+@media only screen and (min-width: 0) and (max-width: 599px) {
+  .col-half {
+    grid-column: span 4;
+  }
+}
+
+.col-third {
+  grid-column: span 4;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 904px) {
+  .col-third {
+    grid-column: span 4;
+  }
+}
+
+@media only screen and (min-width: 0) and (max-width: 599px) {
+  .col-third {
+    grid-column: span 4;
+  }
+}
+
+.col-quarter {
+  grid-column: span 3;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 904px) {
+  .col-quarter {
+    grid-column: span 4;
+  }
+}
+
+@media only screen and (min-width: 0) and (max-width: 599px) {
+  .col-quarter {
+    grid-column: span 2;
+  }
+}
+
+.col-sixth {
+  grid-column: span 2;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 904px) {
+  .col-sixth {
+    grid-column: span 2;
+  }
+}
+
+@media only screen and (min-width: 0) and (max-width: 599px) {
+  .col-sixth {
+    grid-column: span 2;
+  }
+}
+
 .header {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -403,36 +516,6 @@ body {
   position: relative;
 }
 
-.header-logo {
-  width: 12rem;
-  position: fixed;
-  left: 50%;
-  top: 2rem;
-  transform: translateX(-50%);
-}
-
-.header-logo-sign {
-  width: 100%;
-}
-
-.header-logo-type {
-  width: 43.75%;
-  position: relative;
-  margin-top: 9.375%;
-  left: 25%;
-}
-
-.header-logo-type svg {
-  fill: #e8e5e2;
-  width: 100%;
-}
-
-.header-logo-caption {
-  position: relative;
-  font-size: 50%;
-  left: 25%;
-}
-
 .header-translate-text {
   font-size: 2rem;
   font-weight: 100;
@@ -458,12 +541,12 @@ body {
   position: absolute;
   top: 0.375rem;
   left: 1.875rem;
-  transition: 0.3s all ease;
+  transition: 0.6s all ease;
 }
 
 .header-translate-pin--active {
   left: 0.375rem;
-  transition: 0.3s all ease;
+  transition: 0.6s all ease;
 }
 
 .header-logotype {
@@ -508,7 +591,7 @@ body {
   background: white;
   position: absolute;
   top: -1.375rem;
-  transition: 0.3s all ease;
+  transition: 0.6s all ease;
 }
 
 .header-hamIco-line:after {
@@ -518,7 +601,7 @@ body {
   background: white;
   position: absolute;
   top: 1.375rem;
-  transition: 0.3s all ease;
+  transition: 0.6s all ease;
 }
 
 .header-hamIco-line--open {
@@ -529,11 +612,214 @@ body {
 .header-hamIco-line--open:before {
   top: 0rem;
   transform: rotate(26deg);
-  transition: 0.3s all ease;
+  transition: 0.6s all ease;
 }
 
 .header-hamIco-line--open:after {
   top: 0rem;
   transform: rotate(-26deg);
-  transition: 0.3s all ease;
+  transition: 0.6s all ease;
+}
+
+.header-menu {
+  width: 100%;
+  height: 10rem;
+  overflow: hidden;
+  position: fixed;
+  transition: 0.6s all ease;
+  transition-delay: .8s;
+}
+
+.header-menu--open {
+  height: 100vh;
+  transition: 0.1s all ease;
+}
+
+.header-menuBox {
+  width: 100%;
+  max-width: 128rem;
+  margin: 0 auto;
+  position: relative;
+  max-height: 6rem;
+  top: 0;
+  transition: 0.6s all ease;
+  transition-delay: .4s;
+}
+
+@media only screen and (min-width: 1440px) {
+  .header-menuBox {
+    max-width: 170rem;
+  }
+}
+
+.header-menuBox--open {
+  top: 50%;
+  transform: translateY(-50%);
+  max-height: 100vh;
+  transition: 0.6s all ease;
+}
+
+.header-sign {
+  width: 12rem;
+  position: relative;
+  margin: 2rem auto 6rem;
+  transition: 0.6s all ease;
+  transition-delay: .4s;
+}
+
+.header-sign--open {
+  width: 40rem;
+  transition: 0.6s all ease;
+}
+
+.header-sign > img {
+  width: 100%;
+}
+
+.header-sign-type {
+  width: 43.75%;
+  position: relative;
+  margin-top: 9.375%;
+  left: 25%;
+}
+
+.header-sign-type svg {
+  fill: #e8e5e2;
+  width: 100%;
+}
+
+.header-sign-caption {
+  position: relative;
+  font-size: 50%;
+  left: 25%;
+}
+
+.header-assist {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.1s all ease;
+}
+
+.header-assist--open {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.6s all ease;
+  transition-delay: .6s;
+}
+
+.header-menuTitle {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.header-questions {
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.header-question {
+  display: inline-block;
+  border: 1px solid grey;
+  padding: 1rem;
+  border-radius: 4rem;
+  margin: 0 0.5rem 1rem 0.5rem;
+}
+
+@media only screen and (min-width: 1440px) {
+  .header-question {
+    padding: 2rem;
+    margin: 0 1rem 2rem 1rem;
+  }
+}
+
+.header-question > a {
+  color: white;
+}
+
+.logo {
+  width: 40rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo-sign {
+  width: 100%;
+  position: relative;
+}
+
+.logo-sign--open {
+  width: 40rem;
+  transition: 0.6s all ease;
+}
+
+.logo-sign > img {
+  width: 100%;
+}
+
+.logo-type {
+  width: 44%;
+  position: relative;
+  left: 24%;
+  margin-top: 9%;
+  fill: #e8e5e2;
+}
+
+.logo-caption {
+  margin-top: -13%;
+  width: 75.8%;
+  position: relative;
+  left: 24%;
+  fill: #e8e5e2;
+}
+
+.logo-caption > text {
+  font-size: .47rem;
+  font-family: "approach", sans-serif;
+  font-weight: 200;
+}
+
+.mouseWheel {
+  position: absolute;
+  top: calc(100vh - 8rem - 3rem);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mouseWheel-mouse {
+  height: 5rem;
+  width: 3rem;
+  border: .25rem solid white;
+  border-radius: 1.5rem;
+  margin: 0 auto;
+}
+
+.mouseWheel-pin {
+  width: 1rem;
+  height: 1rem;
+  background-color: white;
+  margin: 0.75rem auto;
+  border-radius: .5rem;
+  animation-name: mouse;
+  animation-duration: 1.5s;
+  animation-timing-function: normal;
+  animation-iteration-count: infinite;
+}
+
+.mouseWheel-text {
+  text-align: center;
+}
+
+@keyframes mouse {
+  0% {
+    margin: 0.75rem auto;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    margin: 2.75rem auto;
+    opacity: 0;
+  }
 }

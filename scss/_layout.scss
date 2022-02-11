@@ -2,4 +2,68 @@
     margin: 0 6rem;
     display: grid;
     grid-template-columns: repeat(12 , 1fr);
+    @include sScreen{
+        margin: 0 2rem;
+    }
+    @include mScreen{
+        margin: 0 3rem;
+    }
 }
+.smallRow{
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .col-full {
+    grid-column: span 12;
+    @include mScreen() {
+      grid-column: span 8;
+    }
+    @include sScreen() {
+      grid-column: span 4;
+    }
+  }
+  .col-twoThirds {
+    grid-column: span 8;
+    @include mScreen() {
+      grid-column: span 4;
+    }
+    @include sScreen() {
+      grid-column: span 4;
+    }
+  }
+  .col-half {
+    grid-column: span 6;
+    @include mScreen() {
+      grid-column: span 4;
+    }
+    @include sScreen() {
+      grid-column: span 4;
+    }
+  }
+  .col-third {
+    grid-column: span 4;
+    @include mScreen() {
+      grid-column: span 4;
+    }
+    @include sScreen() {
+      grid-column: span 4;
+    }
+  }
+  .col-quarter {
+    grid-column: span 3;
+    @include mScreen() {
+      grid-column: span 4;
+    }
+    @include sScreen() {
+      grid-column: span 2;
+    }
+  }
+  .col-sixth {
+    grid-column: span 2;
+    @include mScreen() {
+      grid-column: span 2;
+    }
+    @include sScreen() {
+      grid-column: span 2;
+    }
+  }
