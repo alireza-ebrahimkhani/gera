@@ -4,9 +4,11 @@
     grid-template-columns: repeat(12 , 1fr);
     @include sScreen{
         margin: 0 2rem;
+        grid-template-columns: repeat(4 , 1fr);
     }
     @include mScreen{
         margin: 0 3rem;
+        grid-template-columns: repeat(4 , 1fr);
     }
 }
 .smallRow{

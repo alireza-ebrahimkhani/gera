@@ -87,7 +87,6 @@ $fafont: "vazir";
   letter-spacing: $spacing;
   line-height: $leading;
   text-transform: $case;
-  color: white;
 }
 
 .overline {
@@ -118,10 +117,10 @@ $fafont: "vazir";
 .body {
   @include type(100, 2.75rem, 1, 3.5rem, capitalize);
   @include sScreen {
-    @include type(100, 1.75rem, 1, 3.5rem, capitalize);
+    @include type(100, 1.75rem, 1, 2.5rem, capitalize);
   }
   @include mScreen {
-    @include type(100, 1.75rem, 1, 3.5rem, capitalize);
+    @include type(100, 2.25rem, 1, 3rem, capitalize);
   }
   @include xlScreen {
     @include type(100, 3rem, 1, 3.75rem, capitalize);

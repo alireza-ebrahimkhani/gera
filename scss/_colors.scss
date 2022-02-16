@@ -1,8 +1,19 @@
 $black: black;
 $white: white;
+:root{
+    --baseColor: 255, 255, 255;
+
+}
+:root.dark{
+    --baseColor: 255, 255, 255 !important;
+}
+
+$lightgrey: rgba(var(--baseColor), 0.2);
+
 $red: #e53942;
 $yellow: #ffbf3e;
 $green: #3dd388;
 $orange: #f75231;
 $grey: #e8e5e2;
 $blue: #5952e8;
+
