@@ -10,9 +10,9 @@ html {
 }
 body {
   background-color: rgb(0, 0, 0);
-  color: white;
+  color: rgba(var(--baseColor), 1);
 }
-$fastMotion:.1s all ease;
+$fastMotion:.2s all ease;
 $mediumMotion:.4s all ease;
 $slowMotion:.6s all ease;
 
