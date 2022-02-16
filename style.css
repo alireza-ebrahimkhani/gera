@@ -994,8 +994,13 @@ body {
   height: 100vh;
 }
 
+.services {
+  position: relative;
+}
+
 .services-service {
   padding-bottom: 3rem;
+  position: absolute;
 }
 
 .services-tag {

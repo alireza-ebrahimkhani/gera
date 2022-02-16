@@ -56,8 +56,10 @@
       height: 100vh;
   }
   .services{
+      position: relative;
     &-service{
         padding-bottom:3rem ;
+        position: absolute;
     }
     &-tag{
         padding: 1rem 2rem;
