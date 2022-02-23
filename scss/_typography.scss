@@ -102,7 +102,7 @@ $fafont: "vazir";
   }
 }
 .caption {
-  @include type(100, 2rem, 1, 3rem, capitalize);
+  @include type(100, 2rem, 1, 2.25rem, capitalize);
   @include sScreen {
     @include type(100, 1.5rem, 1, 2rem, capitalize);
   }
@@ -128,7 +128,7 @@ $fafont: "vazir";
 }
 
 .title {
-  @include type(300, 5.25rem, 1, 2.6rem, capitalize);
+  @include type(300, 5.25rem, 1, 5.75rem, capitalize);
   @include sScreen {
     @include type(300, 2.75rem, 1, 2.8rem, capitalize);
   }
@@ -136,7 +136,7 @@ $fafont: "vazir";
     @include type(300, 2.75rem, 1, 2.8rem, capitalize);
   }
   @include xlScreen {
-    @include type(300, 6.5rem, 1, 2.6rem, capitalize);
+    @include type(300, 6.5rem, 1, 7rem, capitalize);
   }
 }
 
@@ -154,21 +154,22 @@ $fafont: "vazir";
 }
 
 .display {
-  @include type(300, 18rem, 1, 2.6rem, lowercase);
+  @include type(300, 16rem, 1, 20rem, unset);
   @include sScreen {
-    @include type(300, 8rem, 1, 2.6rem, lowercase);
+    @include type(300, 8rem, 1, 10rem, unset);
   }
   @include mScreen {
-    @include type(300, 8rem, 1, 2.6rem, lowercase);
+    @include type(300, 12rem, 1, 14rem, unset);
   }
   @include xlScreen {
-    @include type(300, 24.75rem, 1, 2.6rem, lowercase);
+    @include type(300, 20.75rem, 1, 25rem, unset);
   }
 }
 
 .fa{
   font-family: $fafont;
   direction: rtl;
+  display: none;
 }
 
 .align{
