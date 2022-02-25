@@ -1,4 +1,4 @@
-//hamburger icon toggle
+//**  hamburger icon toggle  **//
 let header = document.querySelector(".header");
 let header_hamIco = document.querySelector(".header-hamIco");
 let header_line = document.querySelector(".header-hamIco-line");
@@ -18,9 +18,30 @@ header_hamIco.addEventListener("click", () => {
   menu_is_open = true;
 });
 
-///translate switch toggle
+//**  translate switch toggle  **//
 let header_switch = document.querySelector(".header-translate-switch");
 let header_pin = document.querySelector(".header-translate-pin");
 header_switch.addEventListener("click", () => {
   header_pin.classList.toggle("header-translate-pin--active");
+});
+
+//**  tags  **//
+let tag = document.querySelectorAll(".post-tag");
+tag.forEach(thisTag => {
+  let innerText = thisTag.innerHTML;
+  if(innerText == "finance"){thisTag.classList.add('post-tag--finance')}
+  if(innerText == "marketing"){thisTag.classList.add('post-tag--marketing')}
+  if(innerText == "legal"){thisTag.classList.add('post-tag--legal')}
+  if(innerText == "commerce"){thisTag.classList.add('post-tag--commerce')}
+  if(innerText == "hr"){thisTag.classList.add('post-tag--hr')}
+  if(innerText == "it"){thisTag.classList.add('post-tag--it')}
+});
+
+//**  contact  **//
+let contact = document.querySelector(".contact-btn");
+let contact_is_open = false;
+contact.addEventListener("click", () => {
+  document.querySelector(".contact").classList.toggle("contact--open");
+
+  contact_is_open = true;
 });

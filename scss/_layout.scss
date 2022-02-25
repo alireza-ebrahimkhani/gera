@@ -2,13 +2,32 @@
     margin: 0 6rem;
     display: grid;
     grid-template-columns: repeat(12 , 1fr);
+    grid-gap:3rem;
+    &--min{
+      max-width: 904px;
+      margin:0 auto;
+      @include mScreen{
+        margin: 0 3rem;
+    }
+    @include sScreen{
+      margin: 0 2rem;
+  }
+    }
     @include sScreen{
         margin: 0 2rem;
-        grid-template-columns: repeat(4 , 1fr);
+        grid-gap:2rem;
     }
     @include mScreen{
         margin: 0 3rem;
-        grid-template-columns: repeat(4 , 1fr);
+        grid-gap:3rem;
+    }
+    @include lScreen{
+        margin: 0 6rem;
+        grid-gap:3rem;
+    }
+    @include xlScreen{
+        margin: 0 10rem;
+        grid-gap:6rem;
     }
 }
 .smallRow{
@@ -27,45 +46,48 @@
   .col-twoThirds {
     grid-column: span 8;
     @include mScreen() {
-      grid-column: span 4;
+      grid-column: span 6;
     }
     @include sScreen() {
-      grid-column: span 4;
+      grid-column: span 12;
     }
   }
   .col-half {
     grid-column: span 6;
     @include mScreen() {
-      grid-column: span 4;
+      grid-column: span 6;
     }
     @include sScreen() {
-      grid-column: span 4;
+      grid-column: span 12;
     }
   }
   .col-third {
     grid-column: span 4;
     @include mScreen() {
-      grid-column: span 4;
+      grid-column: span 6;
     }
     @include sScreen() {
-      grid-column: span 4;
+      grid-column: span 6;
     }
   }
   .col-quarter {
     grid-column: span 3;
-    @include mScreen() {
+    @include lScreen() {
       grid-column: span 4;
     }
+    @include mScreen() {
+      grid-column: span 6;
+    }
     @include sScreen() {
-      grid-column: span 2;
+      grid-column: span 12;
     }
   }
   .col-sixth {
     grid-column: span 2;
     @include mScreen() {
-      grid-column: span 2;
+      grid-column: span 3;
     }
     @include sScreen() {
-      grid-column: span 2;
+      grid-column: span 6;
     }
   }

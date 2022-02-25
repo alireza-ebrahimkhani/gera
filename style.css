@@ -21,10 +21,12 @@ img {
 
 :root {
   --baseColor: 255, 255, 255;
+  --contColor:0, 0, 0;
 }
 
 :root.light {
   --baseColor: 0, 0, 0 !important;
+  --contColor: 255, 255, 255 !important;
 }
 
 :root.dark {
@@ -90,8 +92,8 @@ img {
   font-weight: 100;
   font-size: 1.5rem;
   letter-spacing: 1;
-  line-height: 3rem;
-  text-transform: capitalize;
+  line-height: auto;
+  text-transform: inherit;
 }
 
 @media only screen and (min-width: 0) and (max-width: 599px) {
@@ -100,8 +102,8 @@ img {
     font-weight: 100;
     font-size: 1.25rem;
     letter-spacing: 1;
-    line-height: 2rem;
-    text-transform: capitalize;
+    line-height: auto;
+    text-transform: inherit;
   }
 }
 
@@ -111,8 +113,8 @@ img {
     font-weight: 100;
     font-size: 1.25rem;
     letter-spacing: 1;
-    line-height: 2rem;
-    text-transform: capitalize;
+    line-height: auto;
+    text-transform: inherit;
   }
 }
 
@@ -122,8 +124,8 @@ img {
     font-weight: 100;
     font-size: 1.75rem;
     letter-spacing: 1;
-    line-height: 2.8rem;
-    text-transform: capitalize;
+    line-height: auto;
+    text-transform: inherit;
   }
 }
 
@@ -132,8 +134,8 @@ img {
   font-weight: 100;
   font-size: 2rem;
   letter-spacing: 1;
-  line-height: 2.25rem;
-  text-transform: capitalize;
+  line-height: auto;
+  text-transform: inherit;
 }
 
 @media only screen and (min-width: 0) and (max-width: 599px) {
@@ -142,8 +144,8 @@ img {
     font-weight: 100;
     font-size: 1.5rem;
     letter-spacing: 1;
-    line-height: 2rem;
-    text-transform: capitalize;
+    line-height: auto;
+    text-transform: inherit;
   }
 }
 
@@ -153,8 +155,8 @@ img {
     font-weight: 100;
     font-size: 1.5rem;
     letter-spacing: 1;
-    line-height: 2rem;
-    text-transform: capitalize;
+    line-height: auto;
+    text-transform: inherit;
   }
 }
 
@@ -164,8 +166,8 @@ img {
     font-weight: 100;
     font-size: 3rem;
     letter-spacing: 1;
-    line-height: 2.8rem;
-    text-transform: capitalize;
+    line-height: auto;
+    text-transform: inherit;
   }
 }
 
@@ -174,8 +176,8 @@ img {
   font-weight: 100;
   font-size: 2.75rem;
   letter-spacing: 1;
-  line-height: 3.5rem;
-  text-transform: capitalize;
+  line-height: auto;
+  text-transform: inherit;
 }
 
 @media only screen and (min-width: 0) and (max-width: 599px) {
@@ -184,8 +186,8 @@ img {
     font-weight: 100;
     font-size: 1.75rem;
     letter-spacing: 1;
-    line-height: 2.5rem;
-    text-transform: capitalize;
+    line-height: auto;
+    text-transform: inherit;
   }
 }
 
@@ -195,8 +197,8 @@ img {
     font-weight: 100;
     font-size: 2.25rem;
     letter-spacing: 1;
-    line-height: 3rem;
-    text-transform: capitalize;
+    line-height: auto;
+    text-transform: inherit;
   }
 }
 
@@ -206,8 +208,50 @@ img {
     font-weight: 100;
     font-size: 3rem;
     letter-spacing: 1;
-    line-height: 3.75rem;
-    text-transform: capitalize;
+    line-height: auto;
+    text-transform: inherit;
+  }
+}
+
+.subtitle {
+  font-family: "approach", sans-serif;
+  font-weight: 300;
+  font-size: 3.25rem;
+  letter-spacing: 1;
+  line-height: auto;
+  text-transform: inherit;
+}
+
+@media only screen and (min-width: 0) and (max-width: 599px) {
+  .subtitle {
+    font-family: "approach", sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    letter-spacing: 1;
+    line-height: auto;
+    text-transform: inherit;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 904px) {
+  .subtitle {
+    font-family: "approach", sans-serif;
+    font-weight: 300;
+    font-size: 2.5rem;
+    letter-spacing: 1;
+    line-height: auto;
+    text-transform: inherit;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .subtitle {
+    font-family: "approach", sans-serif;
+    font-weight: 300;
+    font-size: 4rem;
+    letter-spacing: 1;
+    line-height: auto;
+    text-transform: inherit;
   }
 }
 
@@ -216,8 +260,8 @@ img {
   font-weight: 300;
   font-size: 5.25rem;
   letter-spacing: 1;
-  line-height: 5.75rem;
-  text-transform: capitalize;
+  line-height: auto;
+  text-transform: inherit;
 }
 
 @media only screen and (min-width: 0) and (max-width: 599px) {
@@ -226,8 +270,8 @@ img {
     font-weight: 300;
     font-size: 2.75rem;
     letter-spacing: 1;
-    line-height: 2.8rem;
-    text-transform: capitalize;
+    line-height: auto;
+    text-transform: inherit;
   }
 }
 
@@ -237,8 +281,8 @@ img {
     font-weight: 300;
     font-size: 2.75rem;
     letter-spacing: 1;
-    line-height: 2.8rem;
-    text-transform: capitalize;
+    line-height: auto;
+    text-transform: inherit;
   }
 }
 
@@ -248,8 +292,8 @@ img {
     font-weight: 300;
     font-size: 6.5rem;
     letter-spacing: 1;
-    line-height: 7rem;
-    text-transform: capitalize;
+    line-height: auto;
+    text-transform: inherit;
   }
 }
 
@@ -258,7 +302,7 @@ img {
   font-weight: 200;
   font-size: 8rem;
   letter-spacing: 1;
-  line-height: 2.6rem;
+  line-height: auto;
   text-transform: lowercase;
 }
 
@@ -268,7 +312,7 @@ img {
     font-weight: 200;
     font-size: 4.5rem;
     letter-spacing: 1;
-    line-height: 2.8rem;
+    line-height: auto;
     text-transform: lowercase;
   }
 }
@@ -279,7 +323,7 @@ img {
     font-weight: 200;
     font-size: 4.5rem;
     letter-spacing: 1;
-    line-height: 2.8rem;
+    line-height: auto;
     text-transform: lowercase;
   }
 }
@@ -290,7 +334,7 @@ img {
     font-weight: 200;
     font-size: 9rem;
     letter-spacing: 1;
-    line-height: 2.6rem;
+    line-height: auto;
     text-transform: lowercase;
   }
 }
@@ -300,7 +344,7 @@ img {
   font-weight: 300;
   font-size: 16rem;
   letter-spacing: 1;
-  line-height: 20rem;
+  line-height: auto;
   text-transform: unset;
 }
 
@@ -310,7 +354,7 @@ img {
     font-weight: 300;
     font-size: 8rem;
     letter-spacing: 1;
-    line-height: 10rem;
+    line-height: auto;
     text-transform: unset;
   }
 }
@@ -321,7 +365,7 @@ img {
     font-weight: 300;
     font-size: 12rem;
     letter-spacing: 1;
-    line-height: 14rem;
+    line-height: auto;
     text-transform: unset;
   }
 }
@@ -332,7 +376,7 @@ img {
     font-weight: 300;
     font-size: 20.75rem;
     letter-spacing: 1;
-    line-height: 25rem;
+    line-height: auto;
     text-transform: unset;
   }
 }
@@ -359,19 +403,51 @@ img {
   margin: 0 6rem;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  grid-gap: 3rem;
+}
+
+.row--min {
+  max-width: 904px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 904px) {
+  .row--min {
+    margin: 0 3rem;
+  }
+}
+
+@media only screen and (min-width: 0) and (max-width: 599px) {
+  .row--min {
+    margin: 0 2rem;
+  }
 }
 
 @media only screen and (min-width: 0) and (max-width: 599px) {
   .row {
     margin: 0 2rem;
-    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
   }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 904px) {
   .row {
     margin: 0 3rem;
-    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem;
+  }
+}
+
+@media only screen and (min-width: 905px) and (max-width: 1439px) {
+  .row {
+    margin: 0 6rem;
+    grid-gap: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .row {
+    margin: 0 10rem;
+    grid-gap: 6rem;
   }
 }
 
@@ -402,13 +478,13 @@ img {
 
 @media only screen and (min-width: 600px) and (max-width: 904px) {
   .col-twoThirds {
-    grid-column: span 4;
+    grid-column: span 6;
   }
 }
 
 @media only screen and (min-width: 0) and (max-width: 599px) {
   .col-twoThirds {
-    grid-column: span 4;
+    grid-column: span 12;
   }
 }
 
@@ -418,13 +494,13 @@ img {
 
 @media only screen and (min-width: 600px) and (max-width: 904px) {
   .col-half {
-    grid-column: span 4;
+    grid-column: span 6;
   }
 }
 
 @media only screen and (min-width: 0) and (max-width: 599px) {
   .col-half {
-    grid-column: span 4;
+    grid-column: span 12;
   }
 }
 
@@ -434,13 +510,13 @@ img {
 
 @media only screen and (min-width: 600px) and (max-width: 904px) {
   .col-third {
-    grid-column: span 4;
+    grid-column: span 6;
   }
 }
 
 @media only screen and (min-width: 0) and (max-width: 599px) {
   .col-third {
-    grid-column: span 4;
+    grid-column: span 6;
   }
 }
 
@@ -448,15 +524,21 @@ img {
   grid-column: span 3;
 }
 
-@media only screen and (min-width: 600px) and (max-width: 904px) {
+@media only screen and (min-width: 905px) and (max-width: 1439px) {
   .col-quarter {
     grid-column: span 4;
   }
 }
 
+@media only screen and (min-width: 600px) and (max-width: 904px) {
+  .col-quarter {
+    grid-column: span 6;
+  }
+}
+
 @media only screen and (min-width: 0) and (max-width: 599px) {
   .col-quarter {
-    grid-column: span 2;
+    grid-column: span 12;
   }
 }
 
@@ -466,13 +548,13 @@ img {
 
 @media only screen and (min-width: 600px) and (max-width: 904px) {
   .col-sixth {
-    grid-column: span 2;
+    grid-column: span 3;
   }
 }
 
 @media only screen and (min-width: 0) and (max-width: 599px) {
   .col-sixth {
-    grid-column: span 2;
+    grid-column: span 6;
   }
 }
 
@@ -1003,7 +1085,7 @@ img {
 }
 
 .services {
-  height: 200vh;
+  height: 100vh;
 }
 
 .services-wrapper {
@@ -1015,7 +1097,8 @@ img {
 .services-service {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   visibility: hidden;
   opacity: 0;
 }
@@ -1040,6 +1123,7 @@ img {
 }
 
 .mission {
+  opacity: 0;
   text-align: center;
   height: 100vh;
   position: relative;
@@ -1062,6 +1146,10 @@ img {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.audience {
+  margin-bottom: 20rem;
 }
 
 .audience-item {
@@ -1090,106 +1178,218 @@ img {
   right: 0;
 }
 
-.values-line {
+.btn {
+  justify-self: right;
+  align-self: right;
+  color: white;
+  display: inline-block;
+}
+
+.btn-arrow {
+  fill: rgba(var(--baseColor), 1);
+  vertical-align: middle;
+}
+
+.btn span {
+  margin: 0 2rem;
+  vertical-align: middle;
+}
+
+.readMore {
+  justify-self: right;
+  align-self: center;
+}
+
+.contact {
+  width: 24rem;
+  height: 70rem;
+  max-height: 6.5rem;
+  position: fixed;
+  bottom: 6rem;
+  left: 6rem;
+  overflow: hidden;
+  border-radius: 3rem;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(20px);
+  -moz-backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  transition: 0.4s all ease;
+  font-family: "approach", sans-serif;
+  font-weight: 100 !important;
+  color: rgba(var(--baseColor), 1);
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 0) and (max-width: 599px) {
+  .contact {
+    bottom: 2rem;
+    left: 2rem;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 904px) {
+  .contact {
+    bottom: 2rem;
+    left: 2rem;
+  }
+}
+
+.contact-btn {
+  padding: 2rem;
+  cursor: pointer;
+  transition: 0.4s all ease;
+}
+
+.contact-wrapper {
+  width: 40rem;
+  position: absolute;
+  bottom: 0rem;
+  transition: 0.4s all ease;
+}
+
+.contact-map {
+  width: 40rem;
+  height: 40rem;
+  background: white;
+  border-radius: 2rem;
+}
+
+.contact-data {
+  padding: 3rem;
+}
+
+.contact-data p {
+  margin-bottom: 1rem;
+}
+
+.contact-data span {
+  font-weight: 500;
+}
+
+.contact-close {
+  width: 6rem;
+  height: 3rem;
+  position: relative;
+  cursor: pointer;
+  float: left;
+  margin-right: 2rem;
+  top: 1.375rem;
+}
+
+.contact-close:before, .contact-close:after {
+  content: '';
+  width: 6rem;
+  height: .25rem;
+  background: rgba(var(--baseColor), 1);
+  position: absolute;
+  top: 0rem;
+}
+
+.contact-close:before {
+  transform: rotate(0deg);
+  background: rgba(var(--baseColor), 1);
+  transition: 0.4s all ease;
+}
+
+.contact-close:after {
+  transform: rotate(0deg);
+  background: rgba(var(--baseColor), 1);
+  transition: 0.4s all ease;
+}
+
+.contact--open {
+  width: 40rem;
+  max-height: 70rem;
+  transition: 0.4s all ease;
+}
+
+.contact--open .contact-btn {
+  padding: 3rem;
+  transition: 0.4s all ease;
+}
+
+.contact--open .contact-close:before {
+  transform: rotate(26deg);
+  transition: 0.4s all ease;
+}
+
+.contact--open .contact-close:after {
+  transform: rotate(-26deg);
+  transition: 0.4s all ease;
+}
+
+.titleBar {
+  margin-bottom: 10rem;
+}
+
+.post-wrapper {
+  overflow: hidden;
+  background-color: white;
+  border-radius: 2rem;
+  color: rgba(var(--contColor), 1);
+}
+
+.post-excerpt {
+  margin: 2rem 0;
+}
+
+.post-tags {
+  display: inline-block;
+}
+
+.post-tag {
+  padding: .5rem 1rem;
+  margin-right: .5rem;
+  margin-bottom: .5rem;
+  float: left;
+  border: 1px solid rgba(var(--contColor), 0.1);
+  border-radius: 3rem;
+}
+
+.post-tag--finance {
+  background-color: #3dd388;
+  border: none;
+}
+
+.post-tag--marketing {
+  background-color: #e53942;
+  border: none;
+  color: white;
+}
+
+.post-tag--legal {
+  background-color: #ffbf3e;
+  border: none;
+}
+
+.post-tag--commerce {
+  background-color: #f75231;
+  border: none;
+  color: white;
+}
+
+.post-tag--hr {
+  background-color: #e8e5e2;
+  border: none;
+  text-transform: uppercase;
+}
+
+.post-tag--it {
+  background-color: #5952e8;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.post-info {
+  padding: 2rem;
+}
+
+.values-skeleton {
   fill: none;
   stroke: rgba(var(--baseColor), 0.2);
   stroke-width: 4;
   stroke-miterlimit: 10;
   transition: 0.4s all ease;
-}
-
-.values .line1 {
-  d: path("M0,0c41.6,28.6,58.1,33.2,191.4,69.9c78,21.5,125.3,89.3,180,179.6c49.7,82.1,63.8,85.8,116.6,92.3c70.6,8.7,69.4,99.5,151.4,99.5S2560,0,2560,0");
-}
-
-.values .line2 {
-  d: path("M0,239c0,0,90.2,113,440.9,168.4c93.3,14.8,139,118.4,198.5,118.4C833.3,525.8,2560,256,2560,256");
-}
-
-.values .line3 {
-  d: path("M0,554c0,0,140.6-109.6,298.7-79.3C420.7,498.2,553.2,602,639.4,602c197.8,0,1920.6-89.9,1920.6-89.9");
-}
-
-.values .line4 {
-  d: path("M-0.8,768.1c0,0,99.5,30.6,233,1.3s301.7-94.5,407.2-91.2c211.1,6.6,1920.6,89.9,1920.6,89.9");
-}
-
-.values .line5 {
-  d: path("M-0.8,1060.4c0,0,119.7,5.4,271.3-78.3c122.4-67.6,169.1-235.2,368.9-227.7 c225.4,8.4,1920.6,269.8,1920.6,269.8");
-}
-
-.values .line6 {
-  d: path("M0,1280.2c22.4-19.2,48.3-59.2,108.5-119.3c61.1-61.1,147.3-65.5,234.7-76.4c201.5-25,173.1-245.8,296.3-245.8c135.1,0,1920.6,441.5,1920.6,441.5");
-}
-
-.values-skeleton--2 .line1 {
-  d: path("M0,0c41.6,28.6,58.1,33.2,191.4,69.9c78,21.5,125.3,89.3,180,179.6c49.7,82.1,63.8,85.8,116.6,92.3c70.6,8.7,69.4,531.1,151.4,531.1S2560,0,2560,0");
-}
-
-.values-skeleton--2 .line2 {
-  d: path("M0,239c0,0,90.2,113,440.9,168.4c93.3,14.8,139,550.1,198.5,550.1C833.3,957.5,2560,256,2560,256");
-}
-
-.values-skeleton--2 .line3 {
-  d: path("M0,554c0,0,140.6-109.6,298.7-79.3c122.1,23.4,254.5,558.9,340.7,558.9c197.8,0,1920.6-521.6,1920.6-521.6");
-}
-
-.values-skeleton--2 .line4 {
-  d: path("M-0.8,768.1c0,0,99.5,30.6,233,1.3s301.7,337.2,407.2,340.5C850.5,1116.5,2560,768.1,2560,768.1");
-}
-
-.values-skeleton--2 .line5 {
-  d: path("M-0.8,1060.4c0,0,119.7,5.4,271.3-78.3c122.4-67.6,169.1,196.5,368.9,204c225.4,8.4,1920.6-161.9,1920.6-161.9");
-}
-
-.values-skeleton--2 .line6 {
-  d: path("M0,1280.2c22.4-19.2,48.3-59.2,108.5-119.3c61.1-61.1,158.2-120.1,234.7-76.4c127.5,72.9,173.1,185.9,296.3,185.9c135.1,0,1920.6-2,1920.6-2");
-}
-
-.values-skeleton--3 .line1 {
-  d: path("M0,0c41.6,28.6,58.1,33.2,191.4,69.9c78,21.5,125.3,89.3,180,179.6c49.7,82.1,63.8,85.8,116.6,92.3c70.6,8.7,69.4,99.5,151.4,99.5S2560,640.1,2560,640.1");
-}
-
-.values-skeleton--3 .line2 {
-  d: path("M0,239c0,0,90.2,113,440.9,168.4c93.3,14.8,139,118.4,198.5,118.4c193.9,0,1920.6,114.3,1920.6,114.3");
-}
-
-.values-skeleton--3 .line3 {
-  d: path("M0,554c0,0,140.6-109.6,298.7-79.3C420.7,498.2,553.2,602,639.4,602c197.8,0,1920.6,38.1,1920.6,38.1");
-}
-
-.values-skeleton--3 .line4 {
-  d: path("M-0.8,768.1c0,0,99.5,30.6,233,1.3s301.7-94.5,407.2-91.2c211.1,6.6,1920.6-38.1,1920.6-38.1");
-}
-
-.values-skeleton--3 .line5 {
-  d: path("M-0.8,1060.4c0,0,119.7,5.4,271.3-78.3c122.4-67.6,169.1-235.2,368.9-227.7C864.8,762.8,2560,640.1,2560,640.1");
-}
-
-.values-skeleton--3 .line6 {
-  d: path("M0,1280.2c22.4-19.2,48.3-59.2,108.5-119.3c61.1-61.1,147.3-65.5,234.7-76.4c201.5-25,173.1-245.8,296.3-245.8c135.1,0,1920.6-198.6,1920.6-198.6");
-}
-
-.values-skeleton--4 .line1 {
-  d: path("M0,449.2c51.2,0,55.2,0,191.4,0c80.9,0,88.3,0,180,0c96,0,59.6,0,116.6,0c71.1,0,69.4,0,151.4,0s1920.6,0,1920.6,0");
-}
-
-.values-skeleton--4 .line2 {
-  d: path("M0,528.2c0,0,127.8,0,440.9,0c94.4,0,139,0,198.5,0c193.9,0,1920.6,0,1920.6,0");
-}
-
-.values-skeleton--4 .line3 {
-  d: path("M0,607.2c0,0,138.4,0,298.7,0c124.3,0,254.5,0,340.7,0c197.8,0,1920.6,0,1920.6,0");
-}
-
-.values-skeleton--4 .line4 {
-  d: path("M-0.8,768.1c0,0,99.5,30.6,233,1.3s301.7-94.5,407.2-91.2c211.1,6.6,1920.6-38.1,1920.6-38.1");
-}
-
-.values-skeleton--4 .line5 {
-  d: path("M-0.8,765.2c0,0,98.1,0,271.3,0c118.9,0,163.8,0,368.9,0c225.6,0,1920.6,0,1920.6,0");
-}
-
-.values-skeleton--4 .line6 {
-  d: path("M0,844.3c29.4,0,23.4,0,108.5,0c77.5,0,146.6,0,234.7,0c201.5,0,173.1,0,296.3,0c135.1,0,1920.6,0,1920.6,0");
 }

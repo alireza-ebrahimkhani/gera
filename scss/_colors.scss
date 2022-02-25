@@ -2,9 +2,11 @@ $black: black;
 $white: white;
 :root{
     --baseColor: 255, 255, 255;
+    --contColor:0, 0, 0;
 }
 :root.light{
     --baseColor: 0, 0, 0 !important;
+    --contColor: 255, 255, 255 !important;
 }
 :root.dark{
     --baseColor: 255, 255, 255 !important;
