@@ -1386,7 +1386,30 @@ img {
   padding: 2rem;
 }
 
+.values-figures {
+  position: relative;
+  height: 100vh;
+}
+
+.values-figures > div {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.values-sign {
+  opacity: 1;
+  transition: 0.4s all ease;
+}
+
+.values-sign--hide {
+  opacity: 0;
+  transition: 0.4s all ease;
+}
+
 .values-skeleton {
+  width: 100%;
   fill: none;
   stroke: rgba(var(--baseColor), 0.2);
   stroke-width: 4;

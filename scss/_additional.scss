@@ -324,10 +324,31 @@
 
  
  .values{
+     
+     &-figures{
+         position: relative;
+         height: 100vh;
+         &>div{
+             position: absolute;
+             top: 50%;
+             transform: translateY(-50%);
+             width: 100%;
+         }
+     }
+     &-sign{
+         opacity: 1;
+         transition: $mediumMotion;
+         &--hide{
+             opacity:0;
+             transition: $mediumMotion;
+
+         }
+     }
      &-wrapper{
 
      }
      &-skeleton{
+         width: 100%;
         fill:none;
         stroke:$lightgrey;
         stroke-width:4;
