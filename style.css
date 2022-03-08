@@ -1415,4 +1415,11 @@ img {
   stroke-width: 4;
   stroke-miterlimit: 10;
   transition: 0.4s all ease;
+  opacity: 0;
+  transition: 0.4s all ease;
+}
+
+.values-skeleton--show {
+  opacity: 1;
+  transition: 0.4s all ease;
 }

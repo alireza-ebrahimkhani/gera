@@ -354,5 +354,11 @@
         stroke-width:4;
         stroke-miterlimit:10;
         transition: $mediumMotion;
+        opacity:0;
+        transition: $mediumMotion;
+        &--show{
+            opacity:1;
+            transition: $mediumMotion;
+        }
      }
  }

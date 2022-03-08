@@ -193,6 +193,29 @@ let line4_5 = 'M0 640.1 301.2 772l331.6 -97.7L2560 628.5'
 let line5_5 = 'M2560 628.5 632.8 673.7 242.7 889.8 0 1019.5'
 let line6_5 = 'm0 1280.6 177-346 286 -126.9 169.8 -138 1927.2 -45'
 
+
+//figure 2 to 3
+gsap.fromTo(".line1" , {attr: { d: line1_2 }}, {attr: { d: line1_3 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*3}`, end:() => `+=${values_height/2}`, scrub:true, markers:false}})
+gsap.fromTo(".line2" , {attr: { d: line2_2 }}, {attr: { d: line2_3 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*3}`, end:() => `+=${values_height/2}`, scrub:true}})
+gsap.fromTo(".line3" , {attr: { d: line3_2 }}, {attr: { d: line3_3 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*3}`, end:() => `+=${values_height/2}`, scrub:true}})
+gsap.fromTo(".line4" , {attr: { d: line4_2 }}, {attr: { d: line4_3 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*3}`, end:() => `+=${values_height/2}`, scrub:true}})
+gsap.fromTo(".line5" , {attr: { d: line5_2 }}, {attr: { d: line5_3 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*3}`, end:() => `+=${values_height/2}`, scrub:true}})
+gsap.fromTo(".line6" , {attr: { d: line6_2 }}, {attr: { d: line6_3 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*3}`, end:() => `+=${values_height/2}`, scrub:true}})
+//figure 3 to 4
+gsap.fromTo(".line1" , {attr: { d: line1_3 }}, {attr: { d: line1_4 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*4}`, end:() => `+=${values_height/2}`, scrub:true, markers:false}})
+gsap.fromTo(".line2" , {attr: { d: line2_3 }}, {attr: { d: line2_4 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*4}`, end:() => `+=${values_height/2}`, scrub:true}})
+gsap.fromTo(".line3" , {attr: { d: line3_3 }}, {attr: { d: line3_4 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*4}`, end:() => `+=${values_height/2}`, scrub:true}})
+gsap.fromTo(".line4" , {attr: { d: line4_3 }}, {attr: { d: line4_4 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*4}`, end:() => `+=${values_height/2}`, scrub:true}})
+gsap.fromTo(".line5" , {attr: { d: line5_3 }}, {attr: { d: line5_4 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*4}`, end:() => `+=${values_height/2}`, scrub:true}})
+gsap.fromTo(".line6" , {attr: { d: line6_3 }}, {attr: { d: line6_4 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*4}`, end:() => `+=${values_height/2}`, scrub:true}})
+//figure 4 to 5
+gsap.fromTo(".line1" , {attr: { d: line1_4 }}, {attr: { d: line1_5 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*5}`, end:() => `+=${values_height/2}`, scrub:true, markers:false}})
+gsap.fromTo(".line2" , {attr: { d: line2_4 }}, {attr: { d: line2_5 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*5}`, end:() => `+=${values_height/2}`, scrub:true}})
+gsap.fromTo(".line3" , {attr: { d: line3_4 }}, {attr: { d: line3_5 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*5}`, end:() => `+=${values_height/2}`, scrub:true}})
+gsap.fromTo(".line4" , {attr: { d: line4_4 }}, {attr: { d: line4_5 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*5}`, end:() => `+=${values_height/2}`, scrub:true}})
+gsap.fromTo(".line5" , {attr: { d: line5_4 }}, {attr: { d: line5_5 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*5}`, end:() => `+=${values_height/2}`, scrub:true}})
+gsap.fromTo(".line6" , {attr: { d: line6_4 }}, {attr: { d: line6_5 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*5}`, end:() => `+=${values_height/2}`, scrub:true}})
+
 //figure 1 to 2
 gsap.fromTo(".line1" , {attr: { d: line1_1 }}, {attr: { d: line1_2 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*2}`, end:() => `+=${values_height/2}`, scrub:true, markers:true}})
 gsap.fromTo(".line2" , {attr: { d: line2_1 }}, {attr: { d: line2_2 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*2}`, end:() => `+=${values_height/2}`, scrub:true}})
@@ -200,28 +223,6 @@ gsap.fromTo(".line3" , {attr: { d: line3_1 }}, {attr: { d: line3_2 }, scrollTrig
 gsap.fromTo(".line4" , {attr: { d: line4_1 }}, {attr: { d: line4_2 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*2}`, end:() => `+=${values_height/2}`, scrub:true}})
 gsap.fromTo(".line5" , {attr: { d: line5_1 }}, {attr: { d: line5_2 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*2}`, end:() => `+=${values_height/2}`, scrub:true}})
 gsap.fromTo(".line6" , {attr: { d: line6_1 }}, {attr: { d: line6_2 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*2}`, end:() => `+=${values_height/2}`, scrub:true}})
-//figure 2 to 3
-gsap.fromTo(".line1" , {attr: { d: line1_2 }}, {attr: { d: line1_3 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*3}`, end:() => `+=${values_height/2}`, scrub:true, markers:true}})
-gsap.fromTo(".line2" , {attr: { d: line2_2 }}, {attr: { d: line2_3 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*3}`, end:() => `+=${values_height/2}`, scrub:true}})
-gsap.fromTo(".line3" , {attr: { d: line3_2 }}, {attr: { d: line3_3 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*3}`, end:() => `+=${values_height/2}`, scrub:true}})
-gsap.fromTo(".line4" , {attr: { d: line4_2 }}, {attr: { d: line4_3 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*3}`, end:() => `+=${values_height/2}`, scrub:true}})
-gsap.fromTo(".line5" , {attr: { d: line5_2 }}, {attr: { d: line5_3 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*3}`, end:() => `+=${values_height/2}`, scrub:true}})
-gsap.fromTo(".line6" , {attr: { d: line6_2 }}, {attr: { d: line6_3 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*3}`, end:() => `+=${values_height/2}`, scrub:true}})
-//figure 3 to 4
-gsap.fromTo(".line1" , {attr: { d: line1_3 }}, {attr: { d: line1_4 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*4}`, end:() => `+=${values_height/2}`, scrub:true, markers:true}})
-gsap.fromTo(".line2" , {attr: { d: line2_3 }}, {attr: { d: line2_4 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*4}`, end:() => `+=${values_height/2}`, scrub:true}})
-gsap.fromTo(".line3" , {attr: { d: line3_3 }}, {attr: { d: line3_4 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*4}`, end:() => `+=${values_height/2}`, scrub:true}})
-gsap.fromTo(".line4" , {attr: { d: line4_3 }}, {attr: { d: line4_4 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*4}`, end:() => `+=${values_height/2}`, scrub:true}})
-gsap.fromTo(".line5" , {attr: { d: line5_3 }}, {attr: { d: line5_4 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*4}`, end:() => `+=${values_height/2}`, scrub:true}})
-gsap.fromTo(".line6" , {attr: { d: line6_3 }}, {attr: { d: line6_4 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*4}`, end:() => `+=${values_height/2}`, scrub:true}})
-//figure 4 to 5
-gsap.fromTo(".line1" , {attr: { d: line1_4 }}, {attr: { d: line1_5 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*5}`, end:() => `+=${values_height/2}`, scrub:true, markers:true}})
-gsap.fromTo(".line2" , {attr: { d: line2_4 }}, {attr: { d: line2_5 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*5}`, end:() => `+=${values_height/2}`, scrub:true}})
-gsap.fromTo(".line3" , {attr: { d: line3_4 }}, {attr: { d: line3_5 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*5}`, end:() => `+=${values_height/2}`, scrub:true}})
-gsap.fromTo(".line4" , {attr: { d: line4_4 }}, {attr: { d: line4_5 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*5}`, end:() => `+=${values_height/2}`, scrub:true}})
-gsap.fromTo(".line5" , {attr: { d: line5_4 }}, {attr: { d: line5_5 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*5}`, end:() => `+=${values_height/2}`, scrub:true}})
-gsap.fromTo(".line6" , {attr: { d: line6_4 }}, {attr: { d: line6_5 }, scrollTrigger: { trigger: ".values", start:() => `+=${values_height*5}`, end:() => `+=${values_height/2}`, scrub:true}})
-
 ScrollTrigger.create({
   trigger: '.values' ,start:"0 0", end:() => `+=${values_height * 7}`,
   pin: true,
@@ -235,5 +236,13 @@ ScrollTrigger.create({
   document.querySelector('.values-sign').classList.add('values-sign--hide'),
   onEnterBack: () => 
   document.querySelector('.values-sign').classList.remove('values-sign--hide'),
+  markers: false,
+});
+ScrollTrigger.create({
+  trigger: '.values' ,start:"0 0", end:() => `+=${values_height}`,
+  onLeave: () => 
+  document.querySelector('.values-skeleton').classList.add('values-skeleton--show'),
+  onEnterBack: () => 
+  document.querySelector('.values-skeleton').classList.remove('values-skeleton--show'),
   markers: false,
 });
