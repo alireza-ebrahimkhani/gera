@@ -1093,7 +1093,7 @@ img {
 
 @media only screen and (min-width: 0) and (max-width: 599px) {
   .logo--services {
-    width: 40rem;
+    width: 30rem;
   }
 }
 

@@ -365,7 +365,7 @@
     transform: translate(-50% , 0);
     transition: $mediumMotion;
     @include sScreen{
-      width: 40rem;
+      width: 30rem;
     }
     //transition: $mediumMotion;
     & > .logo-info{
