@@ -1011,20 +1011,14 @@ img {
   transition: 0.4s all ease;
 }
 
+@media only screen and (min-width: 0) and (max-width: 599px) {
+  .logo--home {
+    width: 30rem;
+  }
+}
+
 .logo--home > .logo-info {
   opacity: 1;
-  transition: 0.4s all ease;
-}
-
-.logo--menu {
-  width: 40rem;
-  top: 50%;
-  transform: translate(-50%, -66%);
-  transition: 0.4s all ease;
-}
-
-.logo--menu > .logo-info {
-  opacity: 0 !important;
   transition: 0.4s all ease;
 }
 
@@ -1043,6 +1037,18 @@ img {
 
 .logo--services > .logo-info {
   opacity: 1;
+}
+
+.logo--menu {
+  width: 40rem;
+  top: 50%;
+  transform: translate(-50%, -66%);
+  transition: 0.4s all ease;
+}
+
+.logo--menu > .logo-info {
+  opacity: 0 !important;
+  transition: 0.4s all ease;
 }
 
 .logo--black .logo-type svg {

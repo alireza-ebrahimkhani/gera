@@ -293,22 +293,15 @@
     z-index: 100;
     transform: translate(-50% , -66%);
     transition: $mediumMotion;
-    
+    @include sScreen{
+      width: 30rem;
+    }
     & > .logo-info{
       opacity: 1;
       transition: $mediumMotion;
     }
   }
-  &--menu{
-    width: 40rem;
-    top: 50%;
-    transform: translate(-50% , -66%);
-    transition: $mediumMotion;
-    & > .logo-info{
-      opacity: 0!important;
-      transition: $mediumMotion;
-    }
-  }
+  
   &--services{
     width: 50rem;
     top: 12rem;
@@ -321,6 +314,16 @@
     & > .logo-info{
       opacity: 1;
       //transition: $mediumMotion;
+    }
+  }
+  &--menu{
+    width: 40rem;
+    top: 50%;
+    transform: translate(-50% , -66%);
+    transition: $mediumMotion;
+    & > .logo-info{
+      opacity: 0!important;
+      transition: $mediumMotion;
     }
   }
   &--black{
