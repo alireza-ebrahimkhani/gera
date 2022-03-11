@@ -995,9 +995,9 @@ img {
 
 .logo {
   width: 12rem;
-  top: 16px;
+  top: 2rem;
   left: 50%;
-  transform: translate(-50%, 1%);
+  transform: translate(-50%, 0);
   position: fixed;
   z-index: 100;
   transition: 0.4s all ease;
@@ -1006,7 +1006,6 @@ img {
 .logo--home {
   width: 40rem;
   top: 50%;
-  left: 50%;
   z-index: 100;
   transform: translate(-50%, -66%);
   transition: 0.4s all ease;
@@ -1017,11 +1016,22 @@ img {
   transition: 0.4s all ease;
 }
 
+.logo--menu {
+  width: 40rem;
+  top: 50%;
+  transform: translate(-50%, -66%);
+  transition: 0.4s all ease;
+}
+
+.logo--menu > .logo-info {
+  opacity: 0 !important;
+  transition: 0.4s all ease;
+}
+
 .logo--services {
   width: 50rem;
-  top: 96px;
-  left: 50%;
-  transform: translate(-50%, 1%);
+  top: 12rem;
+  transform: translate(-50%, 0);
   transition: 0.4s all ease;
 }
 
@@ -1033,19 +1043,6 @@ img {
 
 .logo--services > .logo-info {
   opacity: 1;
-}
-
-.logo--menu {
-  width: 40rem !important;
-  top: 50% !important;
-  left: 50% !important;
-  transform: translate(-50%, -66%) !important;
-  transition: 0.4s all ease;
-}
-
-.logo--menu > .logo-info {
-  opacity: 0 !important;
-  transition: 0.4s all ease;
 }
 
 .logo--black .logo-type svg {

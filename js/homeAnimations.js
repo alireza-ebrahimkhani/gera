@@ -121,11 +121,12 @@
 //*  logo motions 
  ScrollTrigger.create({
   trigger: '.services' ,start:() => "0 0", end:  "100% 0",
-  onEnter: () => 
-  document.querySelector('.logo').classList.add('logo--services'),
+  toggleClass:  { targets: '.logo', className: 'logo--services' },
+  onLeave: () => 
+  document.querySelector('.logo').classList.remove('logo--home'),
   onLeaveBack: () => 
-  document.querySelector('.logo').classList.remove('logo--services'),
-  //markers: true,
+  document.querySelector('.logo').classList.add('logo--home'),
+  markers: true,
 });
 
 //**  pin services **//
