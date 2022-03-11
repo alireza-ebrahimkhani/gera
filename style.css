@@ -1384,7 +1384,7 @@ img {
   left: 6rem;
   overflow: hidden;
   border-radius: 3rem;
-  z-index: 100;
+  z-index: 200;
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(20px);
   -moz-backdrop-filter: blur(20px);
