@@ -446,7 +446,6 @@
         width: 100%;
         @include sScreen{
             width: calc(100% - 4rem);
-            width: 100%;
             height: unset;
             position: absolute;
             top: 20vh;

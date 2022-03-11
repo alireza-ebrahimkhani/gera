@@ -995,12 +995,57 @@ img {
 
 .logo {
   width: 12rem;
-  top: 2rem;
+  top: 16px;
   left: 50%;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, 1%);
   position: fixed;
   z-index: 100;
   transition: 0.4s all ease;
+}
+
+.logo--home {
+  width: 40rem;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  transform: translate(-50%, -66%);
+  transition: 0.4s all ease;
+}
+
+.logo--home > .logo-info {
+  opacity: 1;
+  transition: 0.4s all ease;
+}
+
+.logo--menu {
+  width: 40rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -66%);
+  transition: 0.4s all ease;
+}
+
+.logo--menu > .logo-info {
+  opacity: 0 !important;
+  transition: 0.4s all ease;
+}
+
+.logo--services {
+  width: 50rem;
+  top: 96px;
+  left: 50%;
+  transform: translate(-50%, 1%);
+  transition: 0.4s all ease;
+}
+
+@media only screen and (min-width: 0) and (max-width: 599px) {
+  .logo--services {
+    width: 30rem;
+  }
+}
+
+.logo--services > .logo-info {
+  opacity: 1;
 }
 
 .logo--black .logo-type svg {
@@ -1054,51 +1099,6 @@ img {
   font-size: .47rem;
   font-family: "approach", sans-serif;
   font-weight: 200;
-}
-
-.logo--home {
-  width: 40rem;
-  top: 50%;
-  left: 50%;
-  z-index: 100;
-  transform: translate(-50%, -66%);
-  transition: 0.4s all ease;
-}
-
-.logo--home > .logo-info {
-  opacity: 1;
-  transition: 0.4s all ease;
-}
-
-.logo--menu {
-  width: 40rem;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -66%);
-  transition: 0.4s all ease;
-}
-
-.logo--menu > .logo-info {
-  opacity: 0 !important;
-  transition: 0.4s all ease;
-}
-
-.logo--services {
-  width: 50rem;
-  top: 12rem;
-  left: 50%;
-  transform: translate(-50%, 0);
-  transition: 0.4s all ease;
-}
-
-@media only screen and (min-width: 0) and (max-width: 599px) {
-  .logo--services {
-    width: 30rem;
-  }
-}
-
-.logo--services > .logo-info {
-  opacity: 1;
 }
 
 .black-body {
@@ -1708,7 +1708,6 @@ img {
 @media only screen and (min-width: 0) and (max-width: 599px) {
   .values-textWrapper {
     width: calc(100% - 4rem);
-    width: 100%;
     height: unset;
     position: absolute;
     top: 20vh;

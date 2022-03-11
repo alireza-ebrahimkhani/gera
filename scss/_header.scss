@@ -281,12 +281,51 @@
 }
 .logo{
   width: 12rem;
-  top: 2rem;
+  top: 16px;
   left: 50%;
-  transform: translate(-50% , 0);
+  transform: translate(-50% , 1%);
   position: fixed;
   z-index: 100;
   transition: $mediumMotion;
+  &--home{
+    width: 40rem;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    transform: translate(-50% , -66%);
+    transition: $mediumMotion;
+    
+    & > .logo-info{
+      opacity: 1;
+      transition: $mediumMotion;
+    }
+  }
+  &--menu{
+    width: 40rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -66%);
+    transition: $mediumMotion;
+    & > .logo-info{
+      opacity: 0!important;
+      transition: $mediumMotion;
+    }
+  }
+  &--services{
+    width: 50rem;
+    top: 96px;
+    left: 50%;
+    transform: translate(-50% , 1%);
+    transition: $mediumMotion;
+    @include sScreen{
+      width: 30rem;
+    }
+    //transition: $mediumMotion;
+    & > .logo-info{
+      opacity: 1;
+      //transition: $mediumMotion;
+    }
+  }
   &--black{
     & .logo-type svg{
       fill: black !important;
@@ -334,43 +373,5 @@
       font-weight: 200;
     }
   }
-  &--home{
-    width: 40rem;
-    top: 50%;
-    left: 50%;
-    z-index: 100;
-    transform: translate(-50% , -66%);
-    transition: $mediumMotion;
-    
-    & > .logo-info{
-      opacity: 1;
-      transition: $mediumMotion;
-    }
-  }
-  &--menu{
-    width: 40rem;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , -66%);
-    transition: $mediumMotion;
-    & > .logo-info{
-      opacity: 0!important;
-      transition: $mediumMotion;
-    }
-  }
-  &--services{
-    width: 50rem;
-    top: 12rem;
-    left: 50%;
-    transform: translate(-50% , 0);
-    transition: $mediumMotion;
-    @include sScreen{
-      width: 30rem;
-    }
-    //transition: $mediumMotion;
-    & > .logo-info{
-      opacity: 1;
-      //transition: $mediumMotion;
-    }
-  }
+  
 }
