@@ -1029,6 +1029,7 @@ img {
 .logo--home {
   width: 40rem;
   top: 50%;
+  transform: translate(-50%, -50%);
   transition: 0.4s all ease;
   -webkit-transition: 0.4s all ease;
 }
@@ -1048,6 +1049,7 @@ img {
 .logo--services {
   width: 50rem;
   top: 12rem;
+  transform: translate(-50%, 0);
   transition: 0.4s all ease;
   -webkit-transition: 0.4s all ease;
 }
@@ -1065,6 +1067,7 @@ img {
 .logo--menu {
   width: 40rem;
   top: 50%;
+  transform: translate(-50%, 0);
   transition: 0.4s all ease;
   -webkit-transition: 0.4s all ease;
 }
