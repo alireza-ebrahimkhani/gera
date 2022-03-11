@@ -42,6 +42,7 @@
     &-text{
       font-size: 2rem;
       font-weight: 100;
+      font-family: $fafont;
     }
     &-switch{
       position: relative;
@@ -71,7 +72,6 @@
     }
   }
   &-logotype{
-    fill: rgba(var(--baseColor), 1);;
     position: absolute;
     top: 60%;
     transform: translateY(-50%);
@@ -79,6 +79,7 @@
     transition: $mediumMotion;
     & svg{
       height: 4rem;
+      fill: rgba(var(--baseColor), 1);
     }
     @include sScreen{
       display: none;
@@ -214,12 +215,61 @@
     text-align: center;
     margin-top: 6rem;
   }
+  &-back{
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    margin-top:3rem;
+  }
+  &-servicesTriger{
+    cursor: pointer;
+  }
+  &-panel{
+    position: absolute;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: $mediumMotion;
+    &--active{
+      visibility: visible;
+      opacity: 1;
+      transition: $mediumMotion;
+    }
+  }
   &-question{
+    min-width: 6rem;
     display: inline-block;
     border: 1px solid grey;
     padding: 1rem;
     border-radius: 4rem;
     margin: 0 0.5rem 1rem 0.5rem;
+    &-finance{
+      background-color: $green;
+      border: 1px solid $green;
+      & > a{ color: black !important;}
+    }
+    &-marketing{
+      background-color: $red;
+      border: 1px solid $red;
+    }
+    &-legal{
+      background-color: $yellow;
+      border: 1px solid $yellow;
+      & > a{ color: black !important;}
+    }
+    &-it{
+      background-color: $blue;
+      border: 1px solid $blue;
+    }
+    &-hr{
+      background-color: $grey;
+      border: 1px solid $grey;
+      & > a{ color: black !important;}
+    }
+    &-commerce{
+      background-color: $orange;
+      border: 1px solid $orange;
+    }
     @include xlScreen{
       padding: 2rem;
       margin: 0 1rem 2rem 1rem;
@@ -291,6 +341,7 @@
     z-index: 100;
     transform: translate(-50% , -66%);
     transition: $mediumMotion;
+    
     & > .logo-info{
       opacity: 1;
       transition: $mediumMotion;
@@ -299,6 +350,7 @@
   &--menu{
     width: 40rem!important;;
     top: 50% !important;
+    left: 50%;
     transform: translate(-50% , -66%)!important;;
     transition: $mediumMotion;
     & > .logo-info{
@@ -308,8 +360,12 @@
   }
   &--services{
     width: 50rem;
-    top: 9rem;
+    top: 12rem;
+    left: 50%;
     transform: translate(-50% , 0);
+    @include sScreen{
+      width: 40rem;
+    }
     //transition: $mediumMotion;
     & > .logo-info{
       opacity: 1;

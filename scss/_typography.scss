@@ -80,109 +80,132 @@
 $enfont: "approach", sans-serif;
 $fafont: "vazir";
 
-@mixin type($weight, $size, $spacing, $leading, $case) {
+@mixin type($weight, $size, $spacing, $leading) {
   font-family: $enfont;
   font-weight: $weight;
   font-size: $size;
   letter-spacing: $spacing;
   line-height: $leading;
-  text-transform: $case;
 }
 
 .overline {
-  @include type(100, 1.5rem, 1, auto, inherit);
+  &:first-letter{
+    text-transform: capitalize
+  }
+  @include type(100, 1.5rem, 1, auto);
   @include sScreen {
-    @include type(100, 1.25rem, 1, auto, inherit);
+    @include type(100, 1.25rem, 1, auto);
   }
   @include mScreen {
-    @include type(100, 1.25rem, 1, auto, inherit);
+    @include type(100, 1.25rem, 1, auto);
   }
   @include xlScreen {
-    @include type(100, 1.75rem, 1, auto, inherit);
+    @include type(100, 1.75rem, 1, auto);
   }
 }
 .caption {
-  @include type(100, 2rem, 1, auto, inherit);
+  &:first-letter{
+    text-transform: capitalize
+  }
+  @include type(100, 2rem, 1, auto);
   @include sScreen {
-    @include type(100, 1.5rem, 1, auto, inherit);
+    @include type(100, 1.5rem, 1, auto);
   }
   @include mScreen {
-    @include type(100, 1.5rem, 1, auto, inherit);
+    @include type(100, 1.5rem, 1, auto);
   }
   @include xlScreen {
-    @include type(100, 3rem, 1, auto, inherit);
+    @include type(100, 2.25rem, 1, auto);
   }
 }
 
 .body {
-  @include type(100, 2.75rem, 1, auto, inherit);
+  &:first-letter{
+    text-transform: capitalize
+  }
+  @include type(100, 2.5rem, 1, auto);
   @include sScreen {
-    @include type(100, 1.75rem, 1, auto, inherit);
+    @include type(100, 2rem, 1, auto);
   }
   @include mScreen {
-    @include type(100, 2.25rem, 1, auto, inherit);
+    @include type(100, 2rem, 1, auto);
   }
   @include xlScreen {
-    @include type(100, 3rem, 1, auto, inherit);
+    @include type(100, 3rem, 1, auto);
   }
 }
 
 .subtitle {
-  @include type(300, 3.25rem, 1, auto, inherit);
+  &:first-letter{
+    text-transform: capitalize
+  }
+  @include type(300, 3.25rem, 1, auto);
   @include sScreen {
-    @include type(300, 2rem, 1, auto, inherit);
+    @include type(300, 2rem, 1, auto);
   }
   @include mScreen {
-    @include type(300, 2.5rem, 1, auto, inherit);
+    @include type(300, 2.5rem, 1, auto);
   }
   @include xlScreen {
-    @include type(300, 4rem, 1, auto, inherit);
+    @include type(300, 4rem, 1, auto);
   }
 }
 
 .title {
-  @include type(300, 5.25rem, 1, auto, inherit);
+  &:first-letter{
+    text-transform: capitalize
+  }
+  @include type(300, 5.25rem, 1, auto);
   @include sScreen {
-    @include type(300, 2.75rem, 1, auto, inherit);
+    @include type(300, 2.75rem, 1, auto);
   }
   @include mScreen {
-    @include type(300, 2.75rem, 1, auto, inherit);
+    @include type(300, 2.75rem, 1, auto);
   }
   @include xlScreen {
-    @include type(300, 6.5rem, 1, auto, inherit);
+    @include type(300, 6.5rem, 1, auto);
   }
 }
 
 .heading {
-  @include type(200, 8rem, 1, auto, lowercase);
+  text-transform: uppercase;
+  @include type(200, 8rem, 1, auto);
   @include sScreen {
-    @include type(200, 4.5rem, 1, auto, lowercase);
+    @include type(200, 4.5rem, 1, auto);
   }
   @include mScreen {
-    @include type(200, 4.5rem, 1, auto, lowercase);
+    @include type(200, 4.5rem, 1, auto);
   }
   @include xlScreen {
-    @include type(200, 9rem, 1, auto, lowercase);
+    @include type(200, 9rem, 1, auto);
   }
 }
 
 .display {
-  @include type(300, 16rem, 1, auto, unset);
+  text-transform: capitalize;
+  @include type(300, 16rem, 1, auto);
   @include sScreen {
-    @include type(300, 8rem, 1, auto, unset);
+    @include type(300, 8rem, 1, auto);
   }
   @include mScreen {
-    @include type(300, 12rem, 1, auto, unset);
+    @include type(300, 12rem, 1, auto);
   }
   @include xlScreen {
-    @include type(300, 20.75rem, 1, auto, unset);
+    @include type(300, 20.75rem, 1, auto);
   }
 }
 
-.fa{
+.FA{
   font-family: $fafont;
   direction: rtl;
+  text-align: right;
   display: none;
+  &--show{
+    display: block;
+  }
+}
+.hideThisFa{
+  display:none;
 }
 
 .align{

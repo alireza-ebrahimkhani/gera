@@ -1,9 +1,14 @@
+.main{
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
 .row{
     margin: 0 6rem;
     display: grid;
     grid-template-columns: repeat(12 , 1fr);
     grid-gap:3rem;
     &--min{
+      width: 100% ;
       max-width: 904px;
       margin:0 auto;
       @include mScreen{
@@ -11,7 +16,20 @@
     }
     @include sScreen{
       margin: 0 2rem;
-  }
+    }
+    }
+    &--medium{
+      width: 100% ;
+      max-width: 904px;
+      margin:0 auto;
+      @include mScreen{
+        margin: 0 3rem;
+        width: calc(100% - 6rem);
+    }
+    @include sScreen{
+      margin: 0 2rem;
+      width: calc(100% - 4rem);
+    }
     }
     @include sScreen{
         margin: 0 2rem;
@@ -30,7 +48,43 @@
         grid-gap:6rem;
     }
 }
+.row-justMargin{
+    margin: 0 6rem;
+    &--min{
+      max-width: 904px;
+      margin:0 auto;
+      @include mScreen{
+        margin: 0 3rem;
+    }
+    @include sScreen{
+      margin: 0 2rem;
+  }
+    }
+    @include sScreen{
+        margin: 0 2rem;
+    }
+    @include mScreen{
+        margin: 0 3rem;
+    }
+    @include lScreen{
+        margin: 0 6rem;
+    }
+    @include xlScreen{
+        margin: 0 10rem;
+    }
+}
+.mediumRow{
+  width: 100%;
+    max-width: 904px;
+    margin: 0 auto;
+    padding: 0 3rem;
+    @include sScreen{
+      padding: 0 2rem;
+  }
+  
+  }
 .smallRow{
+  width: 100%;
     max-width: 600px;
     margin: 0 auto;
   }

@@ -19,23 +19,19 @@ header_hamIco.addEventListener("click", () => {
 });
 
 //**  translate switch toggle  **//
+
 let header_switch = document.querySelector(".header-translate-switch");
 let header_pin = document.querySelector(".header-translate-pin");
+
 header_switch.addEventListener("click", () => {
   header_pin.classList.toggle("header-translate-pin--active");
+  let fa_text = document.querySelectorAll(".FA");
+  fa_text.forEach(thisFA => {
+    thisFA.classList.toggle("FA--show");
+  });
+  
 });
 
-//**  tags  **//
-let tag = document.querySelectorAll(".post-tag");
-tag.forEach(thisTag => {
-  let innerText = thisTag.innerHTML;
-  if(innerText == "finance"){thisTag.classList.add('post-tag--finance')}
-  if(innerText == "marketing"){thisTag.classList.add('post-tag--marketing')}
-  if(innerText == "legal"){thisTag.classList.add('post-tag--legal')}
-  if(innerText == "commerce"){thisTag.classList.add('post-tag--commerce')}
-  if(innerText == "hr"){thisTag.classList.add('post-tag--hr')}
-  if(innerText == "it"){thisTag.classList.add('post-tag--it')}
-});
 
 //**  contact  **//
 let contact = document.querySelector(".contact-btn");
@@ -45,3 +41,4 @@ contact.addEventListener("click", () => {
 
   contact_is_open = true;
 });
+
