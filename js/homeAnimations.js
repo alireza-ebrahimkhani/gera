@@ -122,10 +122,6 @@
  ScrollTrigger.create({
   trigger: '.services' ,start:() => "0 0", end:  "100% 0",
   toggleClass:  { targets: '.logo', className: 'logo--services' },
-  onLeave: () => 
-  document.querySelector('.logo').classList.remove('logo--home'),
-  onLeaveBack: () => 
-  document.querySelector('.logo').classList.add('logo--home'),
   markers: true,
 });
 
