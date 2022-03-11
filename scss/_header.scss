@@ -281,17 +281,18 @@
 }
 .logo{
   width: 12rem;
-  top: 2%;
+  top: 2rem;
   left: 50%;
-  transform: translate(-50% , -50%);
+  transform: translate(-50% , 0);
   transform-origin: center center;
   position: fixed;
   z-index: 100;
+  transition: .4s top ease;
   transition: $mediumMotion;
-
   &--home{
     width: 40rem;
     top: 50%;
+    transition: .4s top ease;
     transition: $mediumMotion;
     @include sScreen{
       width: 30rem;
@@ -304,20 +305,20 @@
   
   &--services{
     width: 50rem;
-    top: 10%;
+    top: 12rem;
+    transition: .4s top ease;
     transition: $mediumMotion;
     @include sScreen{
       width: 30rem;
     }
-    //transition: $mediumMotion;
     & > .logo-info{
       opacity: 1;
-      //transition: $mediumMotion;
     }
   }
   &--menu{
     width: 40rem;
     top: 50%;
+    transition: .4s top ease;
     transition: $mediumMotion;
     & > .logo-info{
       opacity: 0!important;
