@@ -283,15 +283,15 @@
   width: 12rem;
   top: 2rem;
   left: 50%;
-  transform: translate(-50% , 0);
+  transform: translate(-50% , -50%);
+  transform-origin: center center;
   position: fixed;
   z-index: 100;
   transition: $mediumMotion;
+
   &--home{
     width: 40rem;
     top: 50%;
-    z-index: 100;
-    transform: translate(-50% , -66%);
     transition: $mediumMotion;
     @include sScreen{
       width: 30rem;
@@ -305,7 +305,6 @@
   &--services{
     width: 50rem;
     top: 12rem;
-    transform: translate(-50% , 0);
     transition: $mediumMotion;
     @include sScreen{
       width: 30rem;
@@ -319,7 +318,6 @@
   &--menu{
     width: 40rem;
     top: 50%;
-    transform: translate(-50% , -66%);
     transition: $mediumMotion;
     & > .logo-info{
       opacity: 0!important;
