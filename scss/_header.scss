@@ -348,13 +348,13 @@
     }
   }
   &--menu{
-    width: 40rem!important;;
-    top: 50% !important;
+    width: 40rem;
+    top: 50%;
     left: 50%;
-    transform: translate(-50% , -66%)!important;;
+    transform: translate(-50% , -66%);
     transition: $mediumMotion;
     & > .logo-info{
-      opacity: 0!important;;
+      opacity: 0!important;
       transition: $mediumMotion;
     }
   }
