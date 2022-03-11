@@ -308,21 +308,27 @@
   transform: translate(-50% , 0);
   transform-origin: center center;
   z-index: 100;
-  transition: $mediumMotion; 
   -webkit-transition: $mediumMotion;
+  -moz-transition: $mediumMotion;
+  -o-transition: $mediumMotion;
+  transition: $mediumMotion; 
   &--home{
     width: 40rem;
     top: 50%;
     transform: translate(-50% , -50%);
-    transition: $mediumMotion; 
     -webkit-transition: $mediumMotion;
+    -moz-transition: $mediumMotion;
+    -o-transition: $mediumMotion;
+    transition: $mediumMotion; 
     @include sScreen{
       width: 30rem;
     }
     & > .logo-info{
       opacity: 1;
-      transition: $mediumMotion; 
       -webkit-transition: $mediumMotion;
+      -moz-transition: $mediumMotion;
+      -o-transition: $mediumMotion;
+      transition: $mediumMotion; 
     }
   }
   
@@ -330,8 +336,10 @@
     width: 50rem;
     top: 12rem;
     transform: translate(-50% , 0);
-    transition: $mediumMotion; 
     -webkit-transition: $mediumMotion;
+    -moz-transition: $mediumMotion;
+    -o-transition: $mediumMotion;
+    transition: $mediumMotion; 
     @include sScreen{
       width: 30rem;
     }
@@ -343,12 +351,16 @@
     width: 40rem;
     top: 50%;
     transform: translate(-50% , -50%);
-    transition: $mediumMotion; 
     -webkit-transition: $mediumMotion;
+    -moz-transition: $mediumMotion;
+    -o-transition: $mediumMotion;
+    transition: $mediumMotion; 
     & > .logo-info{
       opacity: 0!important;
-      transition: $mediumMotion; 
       -webkit-transition: $mediumMotion;
+      -moz-transition: $mediumMotion;
+      -o-transition: $mediumMotion;
+      transition: $mediumMotion; 
     }
   }
   &--black{

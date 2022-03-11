@@ -1023,7 +1023,6 @@ img {
   transform-origin: center center;
   z-index: 100;
   transition: 0.4s all ease;
-  -webkit-transition: 0.4s all ease;
 }
 
 .logo--home {
@@ -1031,7 +1030,6 @@ img {
   top: 50%;
   transform: translate(-50%, -50%);
   transition: 0.4s all ease;
-  -webkit-transition: 0.4s all ease;
 }
 
 @media only screen and (min-width: 0) and (max-width: 599px) {
@@ -1043,7 +1041,6 @@ img {
 .logo--home > .logo-info {
   opacity: 1;
   transition: 0.4s all ease;
-  -webkit-transition: 0.4s all ease;
 }
 
 .logo--services {
@@ -1051,7 +1048,6 @@ img {
   top: 12rem;
   transform: translate(-50%, 0);
   transition: 0.4s all ease;
-  -webkit-transition: 0.4s all ease;
 }
 
 @media only screen and (min-width: 0) and (max-width: 599px) {
@@ -1069,13 +1065,11 @@ img {
   top: 50%;
   transform: translate(-50%, -50%);
   transition: 0.4s all ease;
-  -webkit-transition: 0.4s all ease;
 }
 
 .logo--menu > .logo-info {
   opacity: 0 !important;
   transition: 0.4s all ease;
-  -webkit-transition: 0.4s all ease;
 }
 
 .logo--black .logo-type svg {
