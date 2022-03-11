@@ -1020,8 +1020,9 @@ img {
 .logo {
   width: 12rem;
   position: fixed;
-  top: 2rem;
+  top: 0%;
   left: 50%;
+  padding-top: 2rem;
   transform: translate(-50%, 0);
   transform-origin: center center;
   z-index: 100;
@@ -1048,7 +1049,7 @@ img {
 
 .logo--services {
   width: 50rem;
-  top: 12rem;
+  top: 6%;
   transform: translate(-50%, 0);
   transition: 0.4s all ease;
 }
