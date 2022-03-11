@@ -314,7 +314,7 @@
   transition: $mediumMotion; 
   &--home{
     width: 40rem;
-    top: 40rem;
+    top: 50%;
     transform: translate(-50% , -50%);
     -webkit-transition: $mediumMotion;
     -moz-transition: $mediumMotion;

@@ -29,7 +29,10 @@ header_switch.addEventListener("click", () => {
   fa_text.forEach(thisFA => {
     thisFA.classList.toggle("FA--show");
   });
-  
+  let en_text = document.querySelectorAll(".EN");
+  en_text.forEach(thisEN => {
+    thisEN.classList.toggle("EN--hide");
+  });
 });
 
 

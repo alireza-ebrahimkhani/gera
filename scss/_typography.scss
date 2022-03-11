@@ -195,6 +195,9 @@ $fafont: "vazir";
   }
 }
 
+.EN--hide{
+  display: none;
+}
 .FA{
   font-family: $fafont;
   direction: rtl;

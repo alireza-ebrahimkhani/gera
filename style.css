@@ -384,6 +384,10 @@ img {
   }
 }
 
+.EN--hide {
+  display: none;
+}
+
 .FA {
   font-family: "vazir";
   direction: rtl;
@@ -442,7 +446,6 @@ img {
 }
 
 .row--medium {
-  width: 100%;
   max-width: 904px;
   margin: 0 auto;
 }
@@ -1027,7 +1030,7 @@ img {
 
 .logo--home {
   width: 40rem;
-  top: 40rem;
+  top: 50%;
   transform: translate(-50%, -50%);
   transition: 0.4s all ease;
 }
