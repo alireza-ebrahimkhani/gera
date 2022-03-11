@@ -1027,7 +1027,7 @@ img {
 
 .logo--home {
   width: 40rem;
-  top: 50%;
+  top: 40rem;
   transform: translate(-50%, -50%);
   transition: 0.4s all ease;
 }
