@@ -302,11 +302,11 @@
 }
 .logo{
   width: 12rem;
+  position: fixed;
   top: 2rem;
   left: 50%;
   transform: translate(-50% , 0);
   transform-origin: center center;
-  position: fixed;
   z-index: 100;
   transition: $mediumMotion; 
   -webkit-transition: $mediumMotion;
@@ -342,7 +342,7 @@
   &--menu{
     width: 40rem;
     top: 50%;
-    transform: translate(-50% , 0);
+    transform: translate(-50% , -50%);
     transition: $mediumMotion; 
     -webkit-transition: $mediumMotion;
     & > .logo-info{

@@ -1016,11 +1016,11 @@ img {
 
 .logo {
   width: 12rem;
+  position: fixed;
   top: 2rem;
   left: 50%;
   transform: translate(-50%, 0);
   transform-origin: center center;
-  position: fixed;
   z-index: 100;
   transition: 0.4s all ease;
   -webkit-transition: 0.4s all ease;
@@ -1067,7 +1067,7 @@ img {
 .logo--menu {
   width: 40rem;
   top: 50%;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, -50%);
   transition: 0.4s all ease;
   -webkit-transition: 0.4s all ease;
 }
