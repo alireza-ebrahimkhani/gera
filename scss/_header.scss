@@ -53,7 +53,8 @@
       border-radius: 1rem;
       margin-left: 1rem;
       cursor: pointer;
-      transition: $mediumMotion;
+      transition: $mediumMotion; 
+      -webkit-transition: $mediumMotion;
     }
     &-pin{
       width:1rem;
@@ -64,11 +65,13 @@
       position: absolute;
       top: 0.375rem;
       left: 1.875rem;
-      transition: $mediumMotion;
+      transition: $mediumMotion; 
+      -webkit-transition: $mediumMotion;
     }
     &-pin--active{
       left: 0.375rem;
-      transition: $mediumMotion;
+      transition: $mediumMotion; 
+      -webkit-transition: $mediumMotion;
     }
   }
   &-logotype{
@@ -76,7 +79,8 @@
     top: 60%;
     transform: translateY(-50%);
     left: 8rem;
-    transition: $mediumMotion;
+    transition: $mediumMotion; 
+    -webkit-transition: $mediumMotion;
     & svg{
       height: 4rem;
       fill: rgba(var(--baseColor), 1);
@@ -92,13 +96,15 @@
     cursor: pointer;
     margin-right: 2rem;
     transition: $mediumMotion;
+     -webkit-transition: $mediumMotion;
     &-line{
       width: 6rem;
       height: .25rem;
       background: rgba(var(--baseColor), 1);;
       position: absolute;
       top:1.375rem;
-      transition: $mediumMotion;
+      transition: $mediumMotion; 
+      -webkit-transition: $mediumMotion;
       &:before{
         content: '';
         width: 6rem;
@@ -106,7 +112,8 @@
         background: rgba(var(--baseColor), 1);;
         position: absolute;
         top:-1.375rem;
-        transition: $mediumMotion;
+        transition: $mediumMotion; 
+        -webkit-transition: $mediumMotion;
       }
       &:after{
         content: '';
@@ -115,21 +122,25 @@
         background: rgba(var(--baseColor), 1);;
         position: absolute;
         top:1.375rem;
-        transition: $mediumMotion;
+        transition: $mediumMotion; 
+        -webkit-transition: $mediumMotion;
       }
     }
     &-line--open{
       height: 0rem;
-      transition: $mediumMotion;
+      transition: $mediumMotion; 
+      -webkit-transition: $mediumMotion;
       &:before{
         top:0rem;
         transform: rotate(26deg);
-        transition: $mediumMotion;
+        transition: $mediumMotion; 
+        -webkit-transition: $mediumMotion;
       }
       &:after{
         top:0rem;
         transform: rotate(-26deg);
-        transition: $mediumMotion;
+        transition: $mediumMotion; 
+        -webkit-transition: $mediumMotion;
       }
     }
   }
@@ -138,12 +149,14 @@
     height: 10rem;
     overflow: hidden;
     position: fixed;
-    transition: $mediumMotion;
+    transition: $mediumMotion; 
+    -webkit-transition: $mediumMotion;
     transition-delay: .8s;
     background-color: transparent;
     &--open{
       height: 100vh;
-      transition: $mediumMotion;
+      transition: $mediumMotion; 
+      -webkit-transition: $mediumMotion;
       background-color: black;
     }
   }
@@ -154,7 +167,8 @@
     position: relative;
     max-height: 6rem;
     top: 0;
-    transition: $mediumMotion;
+    transition: $mediumMotion; 
+    -webkit-transition: $mediumMotion;
     transition-delay: .4s;
     @include xlScreen{
       max-width: 170rem;
@@ -162,18 +176,21 @@
     &--open{
       top: 50%;
       max-height: 100vh;
-      transition: $mediumMotion;
+      transition: $mediumMotion; 
+      -webkit-transition: $mediumMotion;
     }
   }
   &-sign{
     width: 12rem;
     position: relative;
     margin: 2rem auto 6rem;
-    transition: $mediumMotion;
+    transition: $mediumMotion; 
+    -webkit-transition: $mediumMotion;
     transition-delay: .4s;
     &--open{
       width: 40rem;
-      transition: $mediumMotion;
+      transition: $mediumMotion; 
+      -webkit-transition: $mediumMotion;
     }
     &>img{
       width: 100%;
@@ -197,12 +214,14 @@
   &-assist{
     visibility: hidden;
     opacity: 0;
-    transition: $mediumMotion;
+    transition: $mediumMotion; 
+    -webkit-transition: $mediumMotion;
     
     &--open{
       visibility: visible;
       opacity: 1;
-      transition: $mediumMotion;
+      transition: $mediumMotion; 
+      -webkit-transition: $mediumMotion;
       transition-delay: .6s;
     }
   }
@@ -229,11 +248,13 @@
     width: 100%;
     visibility: hidden;
     opacity: 0;
-    transition: $mediumMotion;
+    transition: $mediumMotion; 
+    -webkit-transition: $mediumMotion;
     &--active{
       visibility: visible;
       opacity: 1;
-      transition: $mediumMotion;
+      transition: $mediumMotion; 
+      -webkit-transition: $mediumMotion;
     }
   }
   &-question{
@@ -287,27 +308,28 @@
   transform-origin: center center;
   position: fixed;
   z-index: 100;
-  transition: .4s top ease;
-  transition: $mediumMotion;
+  transition: $mediumMotion; 
+  -webkit-transition: $mediumMotion;
   &--home{
     width: 40rem;
     top: 50%;
-    transition: .4s top ease;
-    transition: $mediumMotion;
+    transition: $mediumMotion; 
+    -webkit-transition: $mediumMotion;
     @include sScreen{
       width: 30rem;
     }
     & > .logo-info{
       opacity: 1;
-      transition: $mediumMotion;
+      transition: $mediumMotion; 
+      -webkit-transition: $mediumMotion;
     }
   }
   
   &--services{
     width: 50rem;
     top: 12rem;
-    transition: .4s top ease;
-    transition: $mediumMotion;
+    transition: $mediumMotion; 
+    -webkit-transition: $mediumMotion;
     @include sScreen{
       width: 30rem;
     }
@@ -318,26 +340,30 @@
   &--menu{
     width: 40rem;
     top: 50%;
-    transition: .4s top ease;
-    transition: $mediumMotion;
+    transition: $mediumMotion; 
+    -webkit-transition: $mediumMotion;
     & > .logo-info{
       opacity: 0!important;
-      transition: $mediumMotion;
+      transition: $mediumMotion; 
+      -webkit-transition: $mediumMotion;
     }
   }
   &--black{
     & .logo-type svg{
       fill: black !important;
-      transition: $mediumMotion;
+      transition: $mediumMotion; 
+      -webkit-transition: $mediumMotion;
     }
     & .logo-caption{
       fill: black !important;
-      transition: $mediumMotion;
+      transition: $mediumMotion; 
+      -webkit-transition: $mediumMotion;
     }
   }
   &-info{
     opacity: 0;
-    transition: $mediumMotion;
+    transition: $mediumMotion; 
+    -webkit-transition: $mediumMotion;
   }
   &-sign{
     width: 100%;
@@ -345,7 +371,8 @@
 
     &--open{
       width: 40rem;
-      transition: $mediumMotion;
+      transition: $mediumMotion; 
+      -webkit-transition: $mediumMotion;
     }
     &>img{
       width: 100%;
@@ -357,7 +384,8 @@
     left: 24%;
     margin-top: 9%;
     fill: rgba(var(--baseColor), 1);;
-    transition: $mediumMotion;
+    transition: $mediumMotion; 
+    -webkit-transition: $mediumMotion;
   }
   &-caption{
     margin-top: -13%;
@@ -365,7 +393,8 @@
     position: relative;
     left: 24%;
     fill: rgba(var(--baseColor), 1);;
-    transition: $mediumMotion;
+    transition: $mediumMotion; 
+    -webkit-transition: $mediumMotion;
     & > text{
       font-size: .47rem;
       font-family: $enfont;
