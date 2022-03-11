@@ -281,7 +281,7 @@
 }
 .logo{
   width: 12rem;
-  top: 16px;
+  top: 2%;
   left: 50%;
   transform: translate(-50% , -50%);
   transform-origin: center center;
@@ -304,7 +304,7 @@
   
   &--services{
     width: 50rem;
-    top: 96px;
+    top: 10%;
     transition: $mediumMotion;
     @include sScreen{
       width: 30rem;
