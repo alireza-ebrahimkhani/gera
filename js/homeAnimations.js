@@ -121,11 +121,10 @@
 //*  logo motions 
  ScrollTrigger.create({
   trigger: '.services' ,start:() => "0 0", end:  "100% 0",
-  toggleClass:  { targets: '.logo', className: 'logo--services' },
-  onLeave: () => 
-  document.querySelector('.logo').classList.remove('logo--home'),
+  onEnter: () => 
+  document.querySelector('.logo').classList.add('logo--services'),
   onLeaveBack: () => 
-  document.querySelector('.logo').classList.add('logo--home'),
+  document.querySelector('.logo').classList.remove('logo--services'),
   //markers: true,
 });
 

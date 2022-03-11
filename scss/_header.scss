@@ -300,17 +300,7 @@
       transition: $mediumMotion;
     }
   }
-  &--menu{
-    width: 40rem;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , -66%);
-    transition: $mediumMotion;
-    & > .logo-info{
-      opacity: 0!important;
-      transition: $mediumMotion;
-    }
-  }
+  
   &--services{
     width: 50rem;
     top: 96px;
@@ -324,6 +314,17 @@
     & > .logo-info{
       opacity: 1;
       //transition: $mediumMotion;
+    }
+  }
+  &--menu{
+    width: 40rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -66%);
+    transition: $mediumMotion;
+    & > .logo-info{
+      opacity: 0!important;
+      transition: $mediumMotion;
     }
   }
   &--black{

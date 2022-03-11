@@ -1017,19 +1017,6 @@ img {
   transition: 0.4s all ease;
 }
 
-.logo--menu {
-  width: 40rem;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -66%);
-  transition: 0.4s all ease;
-}
-
-.logo--menu > .logo-info {
-  opacity: 0 !important;
-  transition: 0.4s all ease;
-}
-
 .logo--services {
   width: 50rem;
   top: 96px;
@@ -1046,6 +1033,19 @@ img {
 
 .logo--services > .logo-info {
   opacity: 1;
+}
+
+.logo--menu {
+  width: 40rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -66%);
+  transition: 0.4s all ease;
+}
+
+.logo--menu > .logo-info {
+  opacity: 0 !important;
+  transition: 0.4s all ease;
 }
 
 .logo--black .logo-type svg {
