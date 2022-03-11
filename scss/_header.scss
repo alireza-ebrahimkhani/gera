@@ -310,11 +310,15 @@
   z-index: 100;
   transition: $mediumMotion; 
   -webkit-transition: $mediumMotion;
+  transition: .4s top ease;
+  -webkit-transition: .4s top ease;
   &--home{
     width: 40rem;
     top: 50%;
     transition: $mediumMotion; 
     -webkit-transition: $mediumMotion;
+    transition: .4s top ease;
+    -webkit-transition: .4s top ease;
     @include sScreen{
       width: 30rem;
     }
@@ -322,14 +326,19 @@
       opacity: 1;
       transition: $mediumMotion; 
       -webkit-transition: $mediumMotion;
+      transition: .4s top ease;
+      -webkit-transition: .4s top ease;
     }
   }
   
   &--services{
     width: 50rem;
     top: 12rem;
+    
     transition: $mediumMotion; 
     -webkit-transition: $mediumMotion;
+    transition: .4s top ease;
+    -webkit-transition: .4s top ease;
     @include sScreen{
       width: 30rem;
     }
