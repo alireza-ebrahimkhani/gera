@@ -1018,20 +1018,20 @@ img {
 }
 
 .logo {
-  width: 12rem;
+  width: 36rem;
   position: fixed;
   top: .1%;
   left: 50%;
   padding-top: 2rem;
-  transform: translate(-50%, -0.1%);
-  transform-origin: center center;
+  transform: translate(-50%, -0.1%) scale(0.33333);
+  transform-origin: center 4.5%;
   z-index: 100;
   transition: 0.4s all ease;
 }
 
 .logo--home {
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
   transition: 0.4s all ease;
 }
 
@@ -1041,8 +1041,8 @@ img {
 }
 
 .logo--services {
-  top: 15%;
-  transform: translate(-50%, -50%);
+  top: 25%;
+  transform: translate(-50%, -50%) scale(1);
   transition: 0.4s all ease;
 }
 
@@ -1052,7 +1052,7 @@ img {
 
 .logo--menu {
   top: 40%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
   transition: 0.4s all ease;
 }
 
