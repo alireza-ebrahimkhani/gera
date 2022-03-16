@@ -315,7 +315,7 @@
   transition: $mediumMotion; 
   &--home{
     top: 50%;
-    transform: translateX(-50%) translateY(-0.1%) scale(100%);
+    transform: translateX(-50%) translateY(-50%) scale(300%);
     -webkit-transition: $mediumMotion;
     -moz-transition: $mediumMotion;
     -o-transition: $mediumMotion;
@@ -332,8 +332,8 @@
   }
   
   &--services{
-    top: 6%;
-    transform: translateX(-50%) translateY(-0.1%) scale(100%);
+    top: 15%;
+    transform: translateX(-50%) translateY(-50%) scale(300%);
     -webkit-transition: $mediumMotion;
     -moz-transition: $mediumMotion;
     -o-transition: $mediumMotion;
@@ -346,7 +346,7 @@
   }
   &--menu{
     top: 40%;
-    transform: translateX(-50%) translateY(-0.1%) scale(100%);
+    transform: translateX(-50%) translateY(-50%) scale(300%);
     -webkit-transition: $mediumMotion;
     -moz-transition: $mediumMotion;
     -o-transition: $mediumMotion;
