@@ -1018,13 +1018,12 @@ img {
 }
 
 .logo {
-  width: 12rem;
-  max-width: 12rem;
+  width: 48rem;
   position: fixed;
-  top: .1%;
+  top: 2rem;
   left: 50%;
-  padding-top: 2rem;
-  transform: translate(-50%, -0.1%);
+  transform-origin: center top;
+  transform: translate(-50%, -0.1%) scale(0.25);
   z-index: 100;
   transition: 0.4s all ease;
 }
@@ -1035,10 +1034,15 @@ img {
 }
 
 .logo--home {
-  max-width: 36rem;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
   transition: 0.4s all ease;
+}
+
+@media only screen and (min-width: 0) and (max-width: 599px) {
+  .logo--home {
+    transform: translate(-50%, -50%) scale(0.75);
+  }
 }
 
 .logo--home > .logo-info {
@@ -1047,10 +1051,16 @@ img {
 }
 
 .logo--services {
-  max-width: 36rem;
-  top: 20%;
-  transform: translate(-50%, -50%);
+  top: 10rem;
+  transform: translate(-50%, -50%) scale(1);
   transition: 0.4s all ease;
+}
+
+@media only screen and (min-width: 0) and (max-width: 599px) {
+  .logo--services {
+    top: 30rem;
+    transform: translate(-50%, -50%) scale(0.75);
+  }
 }
 
 .logo--services > .logo-info {
@@ -1059,15 +1069,15 @@ img {
 }
 
 .logo--menu {
-  max-width: 36rem;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
   transition: 0.4s all ease;
 }
 
 @media only screen and (min-width: 0) and (max-width: 599px) {
   .logo--menu {
     top: 35%;
+    transform: translate(-50%, -50%) scale(0.75);
   }
 }
 

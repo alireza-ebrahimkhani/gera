@@ -34,6 +34,7 @@
     logo_caption.innerHTML='/Marketing Dept.',
    // markers: true,
   });
+  
   ScrollTrigger.create({
     trigger: '.services' , start:() =>`+=${height}`, end:() => `+=${height}`,
     toggleClass:  { targets: '.home-marketing', className: 'services-service--show' },
@@ -139,7 +140,7 @@ ScrollTrigger.create({
   document.querySelector('.header').classList.remove('header--none'),
   onEnterBack: () => 
   document.querySelector('.header').classList.add('header--none'),
-  markers: true,
+  //markers: true,
 });
 
 gsap.to(".mission" , {

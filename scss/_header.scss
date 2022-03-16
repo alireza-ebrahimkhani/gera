@@ -301,13 +301,12 @@
   }
 }
 .logo{
-  width: 12rem;
-  max-width: 12rem;
+  width: 48rem;
   position: fixed;
-  top: .1%;
+  top: 2rem;
   left: 50%;
-  padding-top: 2rem;
-  transform: translate(-50%, -.1%);
+  transform-origin: center top;
+  transform: translate(-50%, -0.1%) scale(.25);
   z-index: 100;
   -webkit-transition: $mediumMotion;
   -moz-transition: $mediumMotion;
@@ -321,14 +320,14 @@
     transition: $mediumMotion; 
   }
   &--home{
-    max-width: 36rem;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
     -webkit-transition: $mediumMotion;
     -moz-transition: $mediumMotion;
     -o-transition: $mediumMotion;
     transition: $mediumMotion; 
     @include sScreen{
+      transform: translate(-50%, -50%) scale(.75);
     }
     & > .logo-info{
       opacity: 1;
@@ -340,14 +339,15 @@
   }
   
   &--services{
-    max-width: 36rem;
-    top: 20%;
-    transform: translate(-50%, -50%);
+    top: 10rem;
+    transform: translate(-50%, -50%) scale(1);
     -webkit-transition: $mediumMotion;
     -moz-transition: $mediumMotion;
     -o-transition: $mediumMotion;
     transition: $mediumMotion; 
     @include sScreen{
+      top: 30rem;
+      transform: translate(-50%, -50%) scale(.75);
     }
     & > .logo-info{
       opacity: 1;
@@ -358,15 +358,15 @@
     }
   }
   &--menu{
-    max-width: 36rem;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
     -webkit-transition: $mediumMotion;
     -moz-transition: $mediumMotion;
     -o-transition: $mediumMotion;
     transition: $mediumMotion; 
     @include sScreen{
       top: 35%;
+      transform: translate(-50%, -50%) scale(.75);
     }
     & > .logo-info{
       opacity: 0!important;
