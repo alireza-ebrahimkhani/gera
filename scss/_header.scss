@@ -303,8 +303,9 @@
 .logo{
   width: 48rem;
   position: fixed;
-  top: 2rem;
+  top: 0.1%;
   left: 50%;
+  padding-top: 8rem;
   transform-origin: center top;
   transform: translate(-50%, -0.1%) scale(.25);
   z-index: 100;
@@ -339,7 +340,8 @@
   }
   
   &--services{
-    top: 10rem;
+    
+    top: 0.1%;
     transform: translate(-50%, -50%) scale(1);
     -webkit-transition: $mediumMotion;
     -moz-transition: $mediumMotion;
