@@ -306,10 +306,10 @@
   top: .1%;
   left: 50%;
   padding-top:2rem;
-  -webkit-transform: translateX(-50% , -0.1%) scale(1);
-  -moz-transform: translateX(-50% , -0.1%) scale(1);
-  -o-transform: translateX(-50% , -0.1%) scale(1);
-  transform: translateX(-50% , -0.1%) scale(1);
+  -webkit-transform: translate(-50% , -0.1%) scale(1);
+  -moz-transform: translate(-50% , -0.1%) scale(1);
+  -o-transform: translate(-50% , -0.1%) scale(1);
+  transform: translate(-50% , -0.1%) scale(1);
   transform-origin: center center;
   z-index: 100;
   -webkit-transition: $mediumMotion;
@@ -318,10 +318,10 @@
   transition: $mediumMotion; 
   &--home{
     top: 50%;
-    -webkit-transform: translateX(-50% , -50%) scale(3);
-    -moz-transform: translateX(-50% , -50%) scale(3);
-    -o-transform: translateX(-50% , -50%) scale(3);
-    transform: translateX(-50% , -50%) scale(3);
+    -webkit-transform: translate(-50% , -50%) scale(3);
+    -moz-transform: translate(-50% , -50%) scale(3);
+    -o-transform: translate(-50% , -50%) scale(3);
+    transform: translate(-50% , -50%) scale(3);
     -webkit-transition: $mediumMotion;
     -moz-transition: $mediumMotion;
     -o-transition: $mediumMotion;
@@ -339,10 +339,10 @@
   
   &--services{
     top: 15%;
-    -webkit-transform: translateX(-50% , -50%) scale(3);
-    -moz-transform: translateX(-50% , -50%) scale(3);
-    -o-transform: translateX(-50% , -50%) scale(3);
-    transform: translateX(-50% , -50%) scale(3);
+    -webkit-transform: translate(-50% , -50%) scale(3);
+    -moz-transform: translate(-50% , -50%) scale(3);
+    -o-transform: translate(-50% , -50%) scale(3);
+    transform: translate(-50% , -50%) scale(3);
     -webkit-transition: $mediumMotion;
     -moz-transition: $mediumMotion;
     -o-transition: $mediumMotion;
@@ -355,10 +355,10 @@
   }
   &--menu{
     top: 40%;
-    -webkit-transform: translateX(-50% , -50%) scale(3);
-    -moz-transform: translateX(-50% , -50%) scale(3);
-    -o-transform: translateX(-50% , -50%) scale(3);
-    transform: translateX(-50% , -50%) scale(3);
+    -webkit-transform: translate(-50% , -50%) scale(3);
+    -moz-transform: translate(-50% , -50%) scale(3);
+    -o-transform: translate(-50% , -50%) scale(3);
+    transform: translate(-50% , -50%) scale(3);
     -webkit-transition: $mediumMotion;
     -moz-transition: $mediumMotion;
     -o-transition: $mediumMotion;
