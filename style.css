@@ -1041,7 +1041,6 @@ img {
 
 @media only screen and (min-width: 0) and (max-width: 599px) {
   .logo--home {
-    top: 50%;
     transform: translate(-50%, -50%) scale(0.75);
   }
 }
@@ -1052,14 +1051,14 @@ img {
 }
 
 .logo--services {
-  top: 22%;
+  top: 0.1%;
   transform: translate(-50%, -50%) scale(1);
   transition: 0.4s all ease;
 }
 
 @media only screen and (min-width: 0) and (max-width: 599px) {
   .logo--services {
-    top: 22%;
+    top: 21%;
     transform: translate(-50%, -50%) scale(0.75);
   }
 }
