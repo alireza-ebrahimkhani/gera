@@ -1030,16 +1030,9 @@ img {
 }
 
 .logo--home {
-  width: 40rem;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(220%);
   transition: 0.4s all ease;
-}
-
-@media only screen and (min-width: 0) and (max-width: 599px) {
-  .logo--home {
-    width: 30rem;
-  }
 }
 
 .logo--home > .logo-info {
@@ -1048,16 +1041,9 @@ img {
 }
 
 .logo--services {
-  width: 50rem;
   top: 6%;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, -0.1%) scale(220%);
   transition: 0.4s all ease;
-}
-
-@media only screen and (min-width: 0) and (max-width: 599px) {
-  .logo--services {
-    width: 30rem;
-  }
 }
 
 .logo--services > .logo-info {
@@ -1065,14 +1051,20 @@ img {
 }
 
 .logo--menu {
-  width: 40rem;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 40%;
+  transform: translate(-50%, -50%) scale(220%);
   transition: 0.4s all ease;
+}
+
+@media only screen and (min-width: 0) and (max-width: 599px) {
+  .logo--menu {
+    top: 35%;
+  }
 }
 
 .logo--menu > .logo-info {
   opacity: 0 !important;
+  visibility: hidden;
   transition: 0.4s all ease;
 }
 
@@ -1294,7 +1286,7 @@ img {
 }
 
 .services {
-  height: 100vh;
+  height: 50vh;
 }
 
 .services-wrapper {

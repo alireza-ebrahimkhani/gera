@@ -44,4 +44,3 @@ contact.addEventListener("click", () => {
 
   contact_is_open = true;
 });
-

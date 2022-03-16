@@ -3,9 +3,6 @@
     top:calc(100vh - 8rem - 3rem) ;
     left: 50%;
     transform: translateX(-50%);
-    &-wrapper{
-
-    }
     &-mouse{
         height: 5rem;
         width: 3rem;
@@ -56,7 +53,7 @@
       height: 100vh;
   }
   .services{
-      height: 100vh;
+      height: 50vh;
     &-wrapper{
         position: relative;
         height: calc(100vh - 26rem);

@@ -314,15 +314,13 @@
   -o-transition: $mediumMotion;
   transition: $mediumMotion; 
   &--home{
-    width: 40rem;
     top: 50%;
-    transform: translate(-50% , -50%);
+    transform: translate(-50% , -50%) scale(220%);
     -webkit-transition: $mediumMotion;
     -moz-transition: $mediumMotion;
     -o-transition: $mediumMotion;
     transition: $mediumMotion; 
     @include sScreen{
-      width: 30rem;
     }
     & > .logo-info{
       opacity: 1;
@@ -334,30 +332,31 @@
   }
   
   &--services{
-    width: 50rem;
     top: 6%;
-    transform: translate(-50% , 0);
+    transform: translate(-50% ,  -0.1%) scale(220%);
     -webkit-transition: $mediumMotion;
     -moz-transition: $mediumMotion;
     -o-transition: $mediumMotion;
     transition: $mediumMotion; 
     @include sScreen{
-      width: 30rem;
     }
     & > .logo-info{
       opacity: 1;
     }
   }
   &--menu{
-    width: 40rem;
-    top: 50%;
-    transform: translate(-50% , -50%);
+    top: 40%;
+    transform: translate(-50% , -50%) scale(220%);
     -webkit-transition: $mediumMotion;
     -moz-transition: $mediumMotion;
     -o-transition: $mediumMotion;
     transition: $mediumMotion; 
+    @include sScreen{
+      top: 35%;
+    }
     & > .logo-info{
       opacity: 0!important;
+      visibility: hidden;
       -webkit-transition: $mediumMotion;
       -moz-transition: $mediumMotion;
       -o-transition: $mediumMotion;
