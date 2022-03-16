@@ -306,8 +306,7 @@
   top: .1%;
   left: 50%;
   padding-top:2rem;
-  transform: translate(-50% , 0);
-  transform-origin: center center;
+  transform: translate(-50% , -0.1%) scale(100%);
   z-index: 100;
   -webkit-transition: $mediumMotion;
   -moz-transition: $mediumMotion;
