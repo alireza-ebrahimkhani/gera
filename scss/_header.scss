@@ -313,6 +313,11 @@
   -moz-transition: $mediumMotion;
   -o-transition: $mediumMotion;
   transition: $mediumMotion; 
+  &-info{
+    opacity: 0;
+    transition: $mediumMotion; 
+    -webkit-transition: $mediumMotion;
+  }
   &--home{
     top: 50%;
     transform: translate(-50% , -50%) scale(1);
@@ -342,6 +347,10 @@
     }
     & > .logo-info{
       opacity: 1;
+      -webkit-transition: $mediumMotion;
+      -moz-transition: $mediumMotion;
+      -o-transition: $mediumMotion;
+      transition: $mediumMotion; 
     }
   }
   &--menu{
@@ -374,11 +383,6 @@
       transition: $mediumMotion; 
       -webkit-transition: $mediumMotion;
     }
-  }
-  &-info{
-    opacity: 0;
-    transition: $mediumMotion; 
-    -webkit-transition: $mediumMotion;
   }
   &-sign{
     width: 100%;

@@ -1029,6 +1029,12 @@ img {
   transition: 0.4s all ease;
 }
 
+.logo-info {
+  opacity: 0;
+  transition: 0.4s all ease;
+  -webkit-transition: 0.4s all ease;
+}
+
 .logo--home {
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -1048,6 +1054,7 @@ img {
 
 .logo--services > .logo-info {
   opacity: 1;
+  transition: 0.4s all ease;
 }
 
 .logo--menu {
@@ -1076,12 +1083,6 @@ img {
 
 .logo--black .logo-caption {
   fill: black !important;
-  transition: 0.4s all ease;
-  -webkit-transition: 0.4s all ease;
-}
-
-.logo-info {
-  opacity: 0;
   transition: 0.4s all ease;
   -webkit-transition: 0.4s all ease;
 }
